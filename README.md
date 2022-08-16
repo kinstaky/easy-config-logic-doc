@@ -4,6 +4,8 @@
 
 本项目用于更方便地设置基于 [xia](https://xia.com) 获取和 [MZTIO](https://xia.com/products/mz-trigio/) 逻辑插件的数字化获取系统的核物理实验触发逻辑，力求摆脱硬件细节，让用户专注于实验逻辑和物理目标。
 
+项目地址：https://github.com/kinstaky/easy-config-logic/
+
 
 
 ## 文档结构

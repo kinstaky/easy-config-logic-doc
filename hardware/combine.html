@@ -1,0 +1,418 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>结合使用 · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../user-guide/user-guide.html" />
+    
+    
+    <link rel="prev" href="pixie16.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="hardware.html">
+            
+                <a href="hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="mztio.html">
+            
+                <a href="mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="pixie16.html">
+            
+                <a href="pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="combine.html">
+            
+                <a href="combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../user-guide/user-guide.html">
+            
+                <a href="../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../user-guide/quick-start.html">
+            
+                <a href="../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../user-guide/config-syntax.html">
+            
+                <a href="../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../user-guide/config-examples.html">
+            
+                <a href="../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../user-guide/advanced.html">
+            
+                <a href="../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../developer/developer.html">
+            
+                <a href="../developer/developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >结合使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7ED3;&#x5408;&#x4F7F;&#x7528;-pixie16-&#x548C;-mztio-&#x63D2;&#x4EF6;"><a name="&#x7ED3;&#x5408;&#x4F7F;&#x7528;-pixie16-&#x548C;-mztio-&#x63D2;&#x4EF6;" class="plugin-anchor" href="#&#x7ED3;&#x5408;&#x4F7F;&#x7528;-pixie16-&#x548C;-mztio-&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED3;&#x5408;&#x4F7F;&#x7528; pixie16 &#x548C; MZTIO &#x63D2;&#x4EF6;</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="plugin-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B80;&#x4ECB;</h2>
+<p>&#x672C;&#x8282;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5C06; pixie16 &#x63D2;&#x4EF6;&#x548C; MZTIO &#x63D2;&#x4EF6;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x662F;&#x672C;&#x4EBA;&#x53EF;&#x80FD;&#x4F1A;&#x5982;&#x6B64;&#x4F7F;&#x7528;&#xFF0C;&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x53EA;&#x80FD;&#x5982;&#x6B64;&#x4F7F;&#x7528;&#xFF0C;&#x5B9E;&#x9645;&#x4ECD;&#x9700;&#x7ED3;&#x5408;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8C03;&#x6574;&#x3002;</p>
+<p>&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x7684;&#x524D;&#x63D0;&#x662F;&#x5355;&#x4E2A;&#x3001;&#x4E24;&#x4E2A;&#x6216;&#x8005;&#x4E09;&#x4E2A; pixie16 &#x63D2;&#x4EF6;&#x7684;&#x5185;&#x90E8;&#x903B;&#x8F91;&#x4E0D;&#x8DB3;&#x4EE5;&#x652F;&#x6491;&#x5B9E;&#x9A8C;&#x9700;&#x6C42;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5916;&#x90E8;&#x63D2;&#x4EF6; MZTIO &#x6765;&#x914D;&#x7F6E;&#x66F4;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#x3002;</p>
+<h2 id="&#x5355;&#x4E2A;&#x673A;&#x7BB1;"><a name="&#x5355;&#x4E2A;&#x673A;&#x7BB1;" class="plugin-anchor" href="#&#x5355;&#x4E2A;&#x673A;&#x7BB1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5355;&#x4E2A;&#x673A;&#x7BB1;</h2>
+<p>&#x6240;&#x6709;&#x7684; pixie16 &#x63D2;&#x4EF6;&#x90FD;&#x53EA;&#x901A;&#x8FC7;&#x7F51;&#x7EBF;&#x8F93;&#x51FA;&#xFF0C;&#x53EF;&#x80FD;&#x53EA;&#x8F93;&#x51FA;1&#x8DEF;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;2&#x8DEF;&#x90FD;&#x8F93;&#x51FA;&#x3002;MZTIO&#x4ECE;&#x7F51;&#x53E3;&#x63A5;&#x6536;&#x6240;&#x6709;&#x6765;&#x81EA; pixie16 &#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x5728;&#x5185;&#x90E8;&#x8FDB;&#x884C;&#x903B;&#x8F91;&#x7EC4;&#x5408;&#x540E;&#xFF0C;&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x5916;&#x90E8;&#x89E6;&#x53D1;&#x7684; pixie16 &#x63D2;&#x4EF6;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x8FD9;&#x4E9B; pixie16 &#x63D2;&#x4EF6;&#x9700;&#x8981;&#x540C;&#x4E00;&#x79CD;&#x603B;&#x89E6;&#x53D1;&#xFF0C;MZTIO &#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x80CC;&#x677F;&#x8F93;&#x51FA;&#x4F5C;&#x4E3A;&#x6240;&#x6709; pixie16 &#x63D2;&#x4EF6;&#x7684; Module Validation Trigger&#xFF0C;&#x540C;&#x65F6; pixie16 &#x8BBE;&#x7F6E;&#x6210;&#x9700;&#x8981; Module Validation Trigger &#x4E14;&#x6765;&#x6E90;&#x4E3A; ET_LocalCrate_BP</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E9B; pixie16 &#x63D2;&#x4EF6;&#x9700;&#x8981;&#x533A;&#x522B;&#x4E8E;&#x603B;&#x89E6;&#x53D1;&#x7684;&#x89E6;&#x53D1;&#xFF0C;MZTIO &#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x7F51;&#x7EBF;&#x7684;&#x7B2C;3&#x8DEF;&#x7ED9;&#x8BE5;&#x63D2;&#x4EF6;&#x8F93;&#x5165;&#x6240;&#x9700;&#x8981;&#x7684;&#x89E6;&#x53D1;&#xFF0C;&#x540C;&#x65F6;&#x8BE5; pixie16 &#x63D2;&#x4EF6;&#x8BBE;&#x7F6E;&#x6210;&#x9700;&#x8981; Module Validation Trigger &#x4E14;&#x6765;&#x6E90;&#x4E3A; Ext_ValidTrig_In &#x7684; LVDS_ValidTrig_FP</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x7684;&#x597D;&#x5904;&#x662F;&#x5982;&#x679C;&#x5927;&#x90E8;&#x5206; pixie16 &#x63D2;&#x4EF6;&#x7684; Module Validation Trigger &#x90FD;&#x6765;&#x81EA;&#x4E8E;&#x80CC;&#x677F;&#xFF0C;&#x5219;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#x548C;&#x903B;&#x8F91;&#x95E8;&#x5BBD;&#x7684;&#x8BBE;&#x7F6E;&#x662F;&#x76F8;&#x4F3C;&#x7684;&#x3002;</p>
+<h2 id="&#x591A;&#x4E2A;&#x673A;&#x7BB1;"><a name="&#x591A;&#x4E2A;&#x673A;&#x7BB1;" class="plugin-anchor" href="#&#x591A;&#x4E2A;&#x673A;&#x7BB1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x4E2A;&#x673A;&#x7BB1;</h2>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x6240;&#x6709;&#x7684; pixie16 &#x63D2;&#x4EF6;&#x90FD;&#x53EA;&#x901A;&#x8FC7;&#x7F51;&#x7EBF;&#x8F93;&#x51FA;&#x3002;MZTIO&#x4ECE;&#x7F51;&#x53E3;&#x63A5;&#x6536;&#x6240;&#x6709;&#x6765;&#x81EA; pixie16 &#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x5728;&#x5185;&#x90E8;&#x8FDB;&#x884C;&#x903B;&#x8F91;&#x7EC4;&#x5408;&#x540E;&#xFF0C;&#x5C06;&#x603B;&#x89E6;&#x53D1;&#x901A;&#x8FC7;&#x7F51;&#x7EBF;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x673A;&#x7BB1;&#x7684;&#x4E3B;&#x7BA1;&#x63D2;&#x4EF6;&#xFF08;&#x5373;&#x53C2;&#x6570; ModCSRB[6] &#x8BBE;&#x7F6E;&#x4E3A;1&#x7684;&#x63D2;&#x4EF6;&#xFF09;&#x3002;</p>
+<ul>
+<li>&#x6240;&#x6709;&#x9700;&#x8981;&#x5916;&#x90E8;&#x89E6;&#x53D1;&#x7684;&#x63D2;&#x4EF6;&#x8BBE;&#x7F6E;&#x4E3A;&#x9700;&#x8981; Module Validation Trigger</li>
+<li>&#x4E3B;&#x7BA1;&#x63D2;&#x4EF6;&#x7684; Module Validation Trigger &#x6765;&#x6E90;&#x8BBE;&#x7F6E;&#x4E3A; Ext_ValidTrig_In &#x7684; LVDS_ValidTrig_FP</li>
+<li>&#x5176;&#x4ED6;&#x9700;&#x8981;&#x603B;&#x89E6;&#x53D1;&#x7684;&#x63D2;&#x4EF6;&#x7684; Module Validation Trigger &#x6765;&#x6E90;&#x8BBE;&#x7F6E;&#x4E3A; ET_LocalCrate_BP&#xFF0C;&#x5B9E;&#x9645;&#x662F;&#x6709;&#x4E3B;&#x7BA1;&#x63D2;&#x4EF6;&#x53D1;&#x51FA;&#x7684;</li>
+<li>&#x9700;&#x8981;&#x533A;&#x522B;&#x4E8E;&#x603B;&#x89E6;&#x53D1;&#x7684;&#x89E6;&#x53D1;&#x7684;&#x63D2;&#x4EF6;&#x4ECE;&#x7F51;&#x53E3;&#x63A5;&#x6536; MZTIO &#x4ECE;&#x7F51;&#x7EBF;&#x4F20;&#x9012;&#x7684;&#x4FE1;&#x53F7;&#xFF0C;Module Validation Trigger &#x6765;&#x6E90;&#x8BBE;&#x7F6E;&#x4E3A; Ext_ValidTrig_In &#x7684; LVDS_ValidTrig_FP</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x7684;&#x597D;&#x5904;&#x662F;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x673A;&#x7BB1;&#x7684;&#x7ED3;&#x6784;&#x662F;&#x76F8;&#x4F3C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x540C;&#x673A;&#x7BB1;&#x7684;&#x4E3B;&#x7BA1;&#x63D2;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x662F;&#x76F8;&#x4F3C;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x673A;&#x7BB1;&#x7684;&#x666E;&#x901A;&#x63D2;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E5F;&#x662F;&#x76F8;&#x4F3C;&#x7684;&#x3002;</p>
+<h2 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="plugin-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;</h2>
+<p>&#x672C;&#x8282;&#x6240;&#x4ECB;&#x7ECD;&#x7684;&#x8BBE;&#x7F6E;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x76EE;&#x7684;&#x5728;&#x4E8E;&#x4FDD;&#x8BC1;&#x4E0D;&#x540C;&#x63D2;&#x4EF6;&#x7684;&#x5730;&#x4F4D;&#x7684;&#x76F8;&#x4F3C;&#x6027;</p>
+<ul>
+<li>&#x5728;&#x5355;&#x673A;&#x7BB1;&#x4E2D;&#xFF0C;&#x4E0D;&#x8BBE;&#x7F6E;&#x4E3B;&#x7BA1;&#x63D2;&#x4EF6;&#xFF0C;&#x4EE4;&#x6BCF;&#x4E2A;&#x63D2;&#x4EF6;&#x5730;&#x4F4D;&#x5E73;&#x7B49;</li>
+<li>&#x5728;&#x591A;&#x673A;&#x7BB1;&#x4E2D;&#xFF0C;&#x8003;&#x8651;&#x5230; MZTIO &#x7F51;&#x53E3;&#x53EF;&#x80FD;&#x4E0D;&#x591F;&#x7528;&#xFF0C;&#x53EA;&#x80FD;&#x518D;&#x6BCF;&#x4E2A;&#x673A;&#x7BB1;&#x4E2D;&#x8BBE;&#x7F6E;&#x4E3B;&#x7BA1;&#x63D2;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x4E2A;&#x673A;&#x7BB1;&#x7684;&#x5730;&#x4F4D;&#x5E73;&#x7B49;</li>
+</ul>
+<p>&#x5982;&#x6B64;&#xFF0C;&#x4EE5;&#x671F;&#x66F4;&#x591A;&#x7684;&#x63D2;&#x4EF6;&#x4FDD;&#x6301;&#x76F8;&#x4F3C;&#x6027;&#xFF0C;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x4F3C;&#x7684;&#x5EF6;&#x8FDF;&#x548C;&#x5BBD;&#x5EA6;&#x53C2;&#x6570;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pixie16.html" class="navigation navigation-prev " aria-label="Previous page: 获取插件 pixie16">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../user-guide/user-guide.html" class="navigation navigation-next " aria-label="Next page: 使用说明">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"结合使用","level":"1.2.3","depth":2,"next":{"title":"使用说明","level":"1.3","depth":1,"path":"user-guide/user-guide.md","ref":"user-guide/user-guide.md","articles":[{"title":"快速开始","level":"1.3.1","depth":2,"path":"user-guide/quick-start.md","ref":"user-guide/quick-start.md","articles":[]},{"title":"配置语法","level":"1.3.2","depth":2,"path":"user-guide/config-syntax.md","ref":"user-guide/config-syntax.md","articles":[]},{"title":"配置示例","level":"1.3.3","depth":2,"path":"user-guide/config-examples.md","ref":"user-guide/config-examples.md","articles":[]},{"title":"进阶使用","level":"1.3.4","depth":2,"path":"user-guide/advanced.md","ref":"user-guide/advanced.md","articles":[]}]},"previous":{"title":"获取插件 pixie16","level":"1.2.2","depth":2,"path":"hardware/pixie16.md","ref":"hardware/pixie16.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"hardware/combine.md","mtime":"2022-08-16T09:30:08.380Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-16T09:53:09.739Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,12 @@
+*
+
+!/hardware/
+!/user-guide/
+!/developer/
+!/images/
+
+!/**/*.md
+!/images/*.png
+
+!/book.json
+!/.gitignore

@@ -1,0 +1,9 @@
+{
+	"title": "easy-config-logic 说明文档",
+	"description": "easy-config-logic 项目的使用和开发说明",
+	"plugins": [
+		"anchors",
+		"code",
+		"splitter"
+	]
+}

@@ -52,7 +52,7 @@
 
 ### 获取结果
 
-解析后的结果可以通过一系列方法得到。比如说 `OrGateSize` 获取或门的数量，`OrGate` 获取特定或门的信息，具体见代码或者api文档 https://kinstaky.github.io/easy-config-logic/ 。
+解析后的结果可以通过一系列方法得到。比如说 `OrGateSize` 获取或门的数量，`OrGate` 获取特定或门的信息，具体见代码或者[api文档](../reference/reference.md)
 
 
 

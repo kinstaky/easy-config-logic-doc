@@ -4,6 +4,7 @@
 	"plugins": [
 		"anchors",
 		"code",
-		"splitter"
+		"splitter",
+		"mathjax-commonhtml"
 	]
 }

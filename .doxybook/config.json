@@ -1,0 +1,8 @@
+{
+	"baseUrl": "",
+	"foldersToGenerate": [
+		"classes",
+		"files",
+		"namespaces"
+	]
+}

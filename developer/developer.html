@@ -69,6 +69,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="syntax.html" />
+    
     
     <link rel="prev" href="../user-guide/advanced.html" />
     
@@ -252,6 +254,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="syntax.html">
+            
+                <a href="syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="stadnardize.md">
+            
+                <span>
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="standalone.html">
+            
+                <a href="standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -299,8 +359,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="3-&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;"><a name="3-&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;" class="plugin-anchor" href="#3-&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;</h1>
-<p>&#x672C;&#x8282;&#x4ECB;&#x7ECD;&#x672C;&#x9879;&#x76EE;&#x662F;&#x5982;&#x4F55;&#x7EC4;&#x7EC7;&#x7684;&#xFF0C;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4EE5;&#x53CA;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x7684;&#x60F3;&#x6CD5;&#x3002;&#x540E;&#x9762;&#x9996;&#x5148;&#x5C06;&#x6309;&#x7167;&#x81EA;&#x5E95;&#x5411;&#x4E0A;&#x7684;&#x987A;&#x5E8F;&#x4ECB;&#x7ECD; <code>src</code> &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4E09;&#x4E2A;&#x5B50;&#x76EE;&#x5F55;&#xFF1A;<code>syntax</code>&#xFF0C;<code>standardize</code> &#x548C; <code>config</code>&#xFF0C;&#x7136;&#x540E;&#x662F; <code>standalone</code> &#x76EE;&#x5F55;&#x3002;</p>
+                                <h1 id="&#x7B2C;&#x4E09;&#x7AE0;-&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;"><a name="&#x7B2C;&#x4E09;&#x7AE0;-&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;" class="plugin-anchor" href="#&#x7B2C;&#x4E09;&#x7AE0;-&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x4E09;&#x7AE0; &#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;</h1>
+<p>&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x672C;&#x9879;&#x76EE;&#x662F;&#x5982;&#x4F55;&#x7EC4;&#x7EC7;&#x7684;&#xFF0C;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4EE5;&#x53CA;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x7684;&#x60F3;&#x6CD5;&#x3002;&#x540E;&#x9762;&#x9996;&#x5148;&#x5C06;&#x6309;&#x7167;&#x81EA;&#x5E95;&#x5411;&#x4E0A;&#x7684;&#x987A;&#x5E8F;&#x4ECB;&#x7ECD; <code>src</code> &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4E09;&#x4E2A;&#x5B50;&#x76EE;&#x5F55;&#xFF1A;<code>syntax</code>&#xFF0C;<code>standardize</code> &#x548C; <code>config</code>&#xFF0C;&#x6700;&#x540E;&#x662F;&#x7B80;&#x5355;&#x4ECB;&#x7ECD; <code>standalone</code> &#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x672C;&#x8282;&#x4E3B;&#x8981;&#x662F;&#x4ECB;&#x7ECD;&#x601D;&#x8DEF;&#xFF0C;&#x5177;&#x4F53;&#x7684; api &#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x9879;&#x76EE;&#x7684;<a href="https://kinstaky.github.io/easy-config-logic/" target="_blank">refernce</a>&#x3002;</p>
 
                                 
                                 </section>
@@ -328,10 +389,14 @@
 
             
                 
-                <a href="../user-guide/advanced.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 进阶使用">
+                <a href="../user-guide/advanced.html" class="navigation navigation-prev " aria-label="Previous page: 进阶使用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="syntax.html" class="navigation navigation-next " aria-label="Next page: syntax 库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -340,7 +405,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"开发者文档","level":"1.4","depth":1,"previous":{"title":"进阶使用","level":"1.3.4","depth":2,"path":"user-guide/advanced.md","ref":"user-guide/advanced.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"developer/developer.md","mtime":"2022-08-16T09:30:08.380Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-16T09:53:09.739Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"开发者文档","level":"1.4","depth":1,"next":{"title":"syntax 库","level":"1.4.1","depth":2,"path":"developer/syntax.md","ref":"developer/syntax.md","articles":[]},"previous":{"title":"进阶使用","level":"1.3.4","depth":2,"path":"user-guide/advanced.md","ref":"user-guide/advanced.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"developer/developer.md","mtime":"2022-08-18T08:57:32.605Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T08:59:57.734Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -355,6 +420,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

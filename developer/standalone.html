@@ -1,0 +1,746 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>standalone · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="config.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../hardware/hardware.html">
+            
+                <a href="../hardware/hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../hardware/mztio.html">
+            
+                <a href="../hardware/mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../hardware/pixie16.html">
+            
+                <a href="../hardware/pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../hardware/combine.html">
+            
+                <a href="../hardware/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../user-guide/user-guide.html">
+            
+                <a href="../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../user-guide/quick-start.html">
+            
+                <a href="../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../user-guide/config-syntax.html">
+            
+                <a href="../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../user-guide/config-examples.html">
+            
+                <a href="../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../user-guide/advanced.html">
+            
+                <a href="../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="developer.html">
+            
+                <a href="developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="syntax.html">
+            
+                <a href="syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="stadnardize.md">
+            
+                <span>
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="standalone.html">
+            
+                <a href="standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >standalone</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="standalone"><a name="standalone" class="plugin-anchor" href="#standalone"><i class="fa fa-link" aria-hidden="true"></i></a>standalone</h1>
+<p>&#x672C;&#x8282;&#x7B80;&#x5355;&#x4ECB;&#x7ECD; <code>standalone</code> &#x4E2D;&#x751F;&#x6210;&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x90FD;&#x662F;&#x600E;&#x4E48;&#x7528;&#x7684;&#xFF0C;&#x5C31;&#x4E0D;&#x89E3;&#x91CA;&#x7F16;&#x7A0B;&#x7684;&#x903B;&#x8F91;&#x4E86;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x89C1;&#x4EE3;&#x7801;&#x3002;&#x5176;&#x5185;&#x73B0;&#x5728;&#x53EF;&#x7528;&#x7684;&#x6709;8&#x4E2A;&#x7A0B;&#x5E8F;&#xFF1A;<code>syntax_tree</code>&#x3001;<code>compare</code>&#x3001;<code>standardize</code>&#x3001;<code>convert</code>&#x3001;<code>config</code>&#x3001;<code>scaler/scaler</code>&#x3001;<code>scaler/scaler_server</code>&#x3001;<code>scaler/scaler_client</code>&#x3002;</p>
+<h2 id="syntaxtree"><a name="syntaxtree" class="plugin-anchor" href="#syntaxtree"><i class="fa fa-link" aria-hidden="true"></i></a>syntax_tree</h2>
+<p>&#x5B9E;&#x73B0;&#x5728; <code>standalone/syntax_tree.cpp</code> &#x4E2D;&#xFF0C;&#x7528;&#x5230;&#x4E86; syntax &#x5E93;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="syntax.html#&#x603B;&#x7ED3;">syntax &#x5E93;</a>&#x4E00;&#x8282;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x7528;&#x6765;&#x5C55;&#x793A;&#x8F93;&#x5165;&#x7684;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#x89E3;&#x6790;&#x51FA;&#x6765;&#x7684;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x6811;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/syntax_tree
+(var0 &amp; var1) | var2
+S1
+&#x251C;&#x2500;S1
+&#x2502; &#x2514;&#x2500;S2
+&#x2502;   &#x251C;&#x2500;(
+&#x2502;   &#x251C;&#x2500;S1
+&#x2502;   &#x2502; &#x251C;&#x2500;S1
+&#x2502;   &#x2502; &#x2502; &#x2514;&#x2500;S2
+&#x2502;   &#x2502; &#x2502;   &#x2514;&#x2500;var0
+&#x2502;   &#x2502; &#x251C;&#x2500;&amp;
+&#x2502;   &#x2502; &#x2514;&#x2500;S2
+&#x2502;   &#x2502;   &#x2514;&#x2500;var1
+&#x2502;   &#x2514;&#x2500;)
+&#x251C;&#x2500;|
+&#x2514;&#x2500;S2
+  &#x2514;&#x2500;var2
+</code></pre>
+<h2 id="compare"><a name="compare" class="plugin-anchor" href="#compare"><i class="fa fa-link" aria-hidden="true"></i></a>compare</h2>
+<p>&#x5B9E;&#x73B0;&#x5728; <code>standalone/compare_logical_expression.cpp</code>&#x4E2D;&#xFF0C;&#x7528;&#x5230;&#x4E86; syntax &#x5E93;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="syntax.html#&#x6BD4;&#x8F83;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;">syntax &#x5E93;</a>&#x4E00;&#x8282;&#x4E2D;&#x6697;&#x793A;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x7528;&#x6765;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x5426;&#x7B49;&#x4EF7;&#x7684;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/compare
+(A &amp; B) | C
+(A | C) &amp; (B | C)
+YES
+
+
+$ ./bin/compare
+(A &amp; B) | A
+A
+YES
+
+
+$ ./bin/compare
+(A &amp; B) | C
+(A | C) &amp; (B | D)
+NO
+</code></pre>
+<h2 id="standardize"><a name="standardize" class="plugin-anchor" href="#standardize"><i class="fa fa-link" aria-hidden="true"></i></a>standardize</h2>
+<p>&#x5B9E;&#x73B0;&#x5728; <code>standalone/standard_logic_adapter.cpp</code>&#xFF0C;&#x7528;&#x5230;&#x4E86; syntax &#x548C; standarize &#x5E93;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="standardize.md#&#x603B;&#x7ED3;">standardize &#x5E93;</a>&#x4E00;&#x8282;&#x4E2D;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x7528;&#x6765;&#x6807;&#x51C6;&#x5F62;&#x5F0F;&#x7684;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/standardize
+((A|B|C)&amp;(D|E|F)) | ((A|D|G)&amp;H) | ((B|H|I)&amp;(J|K|L))
+(B | D | E | F | H | I) &amp; (A | B | C | H | I) &amp; (A | B | C | H | J | K | L) &amp; (D | E | F | H | J | K | L) &amp; (A | B | C | D | G | J | K | L) &amp; (A | D | E | F | G | J | K | L)
+</code></pre>
+<h2 id="convert"><a name="convert" class="plugin-anchor" href="#convert"><i class="fa fa-link" aria-hidden="true"></i></a>convert</h2>
+<p>&#x5B9E;&#x73B0;&#x5728; <code>standalone/convert.cpp</code> &#x4E2D;&#xFF0C;&#x7528;&#x5230;&#x4E86; sytnax&#x3001;stadnardize &#x548C; config &#x5E93;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="../user-guide/advanced.html#&#x4E24;&#x6B65;&#x914D;&#x7F6E;">&#x8FDB;&#x9636;&#x4F7F;&#x7528;</a>&#x4E2D;&#x63D0;&#x5230;&#xFF0C;&#x5C31;&#x662F;&#x7528;&#x6765;&#x4ECE;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EA7;&#x751F;&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x3002;&#x6240;&#x8C13;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x662F;&#x5E94;&#x7528;<a href="../user-guide/config-syntax.html">&#x914D;&#x7F6E;&#x8BED;&#x6CD5;</a>&#x7684;&#x89C4;&#x5219;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; <code>examples/example_logic_0.txt</code>&#x5C31;&#x662F;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x6240;&#x8C13;&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x662F;&#x548C; FPGA &#x5185;&#x5B58;&#x9AD8;&#x5EA6;&#x76F8;&#x5173;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x91CC;&#x9762;&#x90FD;&#x662F;&#x6587;&#x672C;&#x5F62;&#x5F0F;&#x7684;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/convert examples/example_logic_0.txt example_memory_0.txt
+</code></pre>
+<p>&#x5982;&#x4E0A;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x5373;&#x53EF;&#x5F97;&#x5230;&#x540D;&#x4E3A; <code>example_memory_0.txt</code> &#x7684;&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x592A;&#x957F;&#xFF0C;&#x6211;&#x5C31;&#x653E;&#x5728;<a href="#&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x9644;&#x5F55;</a>&#x4E86;&#x3002;&#x8FD9;&#x4E2A;&#x5C31;&#x662F;&#x90A3;&#x79CD;&#x4E00;&#x822C;&#x4EBA;&#x770B;&#x4E0D;&#x61C2;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x7EC6;&#x5FC3;&#x7684;&#x4EBA;&#x53EF;&#x80FD;&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x7248;&#x672C;&#x5DF2;&#x7ECF;&#x662F;2.0&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x7248;&#x672C;1.0&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x9879;&#x76EE;&#x3002;&#x8003;&#x8651;&#x5230;&#x914D;&#x7F6E;&#x8FC7;&#x4E8E;&#x56F0;&#x96BE;&#xFF0C;&#x624D;&#x6709;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x51FA;&#x73B0;&#x3002;</p>
+<h2 id="config"><a name="config" class="plugin-anchor" href="#config"><i class="fa fa-link" aria-hidden="true"></i></a>config</h2>
+<p>&#x5B9E;&#x73B0;&#x5728; <code>standalone/config.cpp</code>&#x4E2D;&#xFF0C;&#x7528;&#x5230;&#x4E86; syntax&#x3001;standardize &#x548C; config &#x5E93;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="../user-guide/quick-start.html#&#x4F7F;&#x7528;">&#x5FEB;&#x901F;&#x5F00;&#x59CB;</a>&#x548C;<a href="../user-guide/advanced.html#&#x4E24;&#x6B65;&#x914D;&#x7F6E;">&#x8FDB;&#x9636;&#x4F7F;&#x7528;</a>&#x4E2D;&#x63D0;&#x5230;&#xFF0C;&#x5C31;&#x662F;&#x8BFB;&#x53D6;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x5199; FPGA&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x60F3;&#x8BA9; FPGA &#x80FD;&#x8DD1;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x8DD1;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x8BFB;&#x53D6;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+$ ./bin/config <span class="hljs-_">-l</span> examples/example_logic_0.txt
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+$ ./bin/config example_memory_0.txt
+<span class="hljs-comment"># &#x6216;&#x8005;</span>
+$ ./bin/config -r example_memory_0.txt
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x8F93;&#x51FA;&#x5F88;&#x957F;&#xFF0C;&#x4E0A;&#x9762;&#x7701;&#x7565;&#x4E86;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<a href="#&#x8FD0;&#x884C;config">&#x9644;&#x5F55;</a>&#x67E5;&#x770B;&#x8BFB;&#x53D6;&#x9AD8;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="scaler"><a name="scaler" class="plugin-anchor" href="#scaler"><i class="fa fa-link" aria-hidden="true"></i></a>scaler</h2>
+<p>&#x5B9E;&#x73B0;&#x5728; <code>standalone/scaler/scaler.cpp</code>&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="../user-guide/advanced.html#&#x5B9A;&#x6807;&#x5668;">&#x8FDB;&#x9636;&#x4F7F;&#x7528;</a>&#x4E2D;&#x63D0;&#x5230;&#x8FC7;&#x3002;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x662F;&#x7C97;&#x7CD9;&#x7684;&#x79FB;&#x690D;&#xFF0C;&#x6211;&#x4ECE;1.0&#x7248;&#x672C;&#x91CC;&#x590D;&#x5236;&#x8FC7;&#x6765;&#x5C31;&#x6539;&#x4E86;&#x6539;&#xFF0C;&#x4F46;&#x662F;&#x80FD;&#x8DD1;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/scaler
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x65F6;&#x6CA1;&#x6709;&#x82B1;&#x91CC;&#x80E1;&#x54E8;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x76F4;&#x63A5;&#x8DD1;&#x5C31;&#x662F;&#x4E86;&#x3002;</p>
+<h2 id="scalerserver"><a name="scalerserver" class="plugin-anchor" href="#scalerserver"><i class="fa fa-link" aria-hidden="true"></i></a>scaler_server</h2>
+<p>&#x5B9A;&#x4E49;&#x548C;&#x5B9E;&#x73B0;&#x5728;<code>standalone/scaler/scaler_defs.h</code> &#x548C;  <code>standalone/scaler/scaler_server.cpp</code> &#x4E2D;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="../user-guide/advanced.html#&#x5B9A;&#x6807;&#x5668;">&#x8FDB;&#x9636;&#x4F7F;&#x7528;</a>&#x4E2D;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x91CD;&#x590D;&#x4ECB;&#x7ECD;&#x4E86;&#xFF0C;&#x8BB0;&#x5F97;&#x5B83;&#x662F;&#x5728; zynq &#x7684;&#x7CFB;&#x7EDF;&#x91CC;&#x8DD1;&#x7684;&#x5E76;&#x8BBE;&#x7F6E;&#x7AEF;&#x53E3;&#x53F7;&#x5C31;&#x884C;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x6BCF;4&#x79D2;&#x8BB0;&#x5F55;&#x4E00;&#x6B21;&#x5B9A;&#x6807;&#x5668;&#x6570;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5728;&#x5934;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x66F4;&#x6539; <code>kRecordPeriod</code>&#x6765;&#x6539;&#x53D8;&#x8BB0;&#x5F55;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x662F;&#x79D2;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/scaler_server 12306
+</code></pre>
+<h2 id="scalerclient"><a name="scalerclient" class="plugin-anchor" href="#scalerclient"><i class="fa fa-link" aria-hidden="true"></i></a>scaler_client</h2>
+<p>&#x5B9A;&#x4E49;&#x548C;&#x5B9E;&#x73B0;&#x5728;<code>standalone/scaler/scaler_defs.h</code> &#x548C;  <code>standalone/scaler/scaler_client.cpp</code> &#x4E2D;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5728;<a href="../user-guide/advanced.html#&#x5B9A;&#x6807;&#x5668;">&#x8FDB;&#x9636;&#x4F7F;&#x7528;</a>&#x4E2D;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x91CD;&#x590D;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5728; zynq &#x7684;&#x7CFB;&#x7EDF;&#x91CC;&#x8DD1;&#xFF0C;&#x4F46;&#x6211;&#x89C9;&#x5F97;&#x6B63;&#x786E;&#x7684;&#x7528;&#x6CD5;&#x662F;&#x5728;&#x53E6;&#x4E00;&#x53F0;&#x66F4;&#x597D;&#x7684;&#x673A;&#x5668;&#x91CC;&#x8DD1;&#x3002;&#x9700;&#x8981;&#x8F93;&#x5165; zynq &#x7684; ip &#x5730;&#x5740;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x6BCF;4&#x79D2;&#x8BB0;&#x5F55;&#x4E00;&#x6B21;&#x5B9A;&#x6807;&#x5668;&#x6570;&#x503C;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x79EF;&#x7D2F;8&#x6B21;&#x7684;&#x8BB0;&#x5F55;&#xFF08;&#x5373;32&#x79D2;&#xFF09;&#x518D;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x8FD9;&#x5806;&#x6570;&#x636E;&#x3002;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x7684; <code>kRecordPeriod</code> &#x6765;&#x66F4;&#x6539;&#x8BB0;&#x5F55;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#x3002;&#x4FEE;&#x6539;&#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x7684; <code>kScalerStackSize</code> &#x6765;&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#x7684;&#x79EF;&#x7D2F;&#x6570;&#x91CF;&#xFF0C;&#x5355;&#x4F4D;&#x662F;&#x4E2A;&#x3002;</p>
+<pre><code class="lang-bash">$ ./bin/scaler_client 192.168.1.108 12306
+</code></pre>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x540E;&#x9ED8;&#x8BA4;&#x5C06;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x5230;&#x8FD0;&#x884C;&#x76EE;&#x5F55;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x6765;&#x6539;&#x53D8;&#xFF0C;&#x8BE6;&#x89C1;<a href="../user-guide/advanced.html#&#x5B9A;&#x6807;&#x5668;">&#x8FDB;&#x9636;&#x4F7F;&#x7528;</a>&#x3002;</p>
+<h2 id="&#x9644;&#x5F55;"><a name="&#x9644;&#x5F55;" class="plugin-anchor" href="#&#x9644;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9644;&#x5F55;</h2>
+<h3 id="&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F4E;&#x7EA7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p><a href="#convert">&#x56DE;&#x5230; convert</a></p>
+<pre><code class="lang-bash">$ cat eample_memory_0.txt
+0x0000 0x0000 0x6666
+0x0000 0x0000 0x6660
+0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000
+
+0x00 0x00 0x00 0x00
+0x00 0x00 0x00 0x00
+0x00 0x00 0x00 0x00
+0x00 0x00 0x00 0x00
+
+0x00 0x00 0x00 0x00
+0x00 0x00 0x00 0x00
+0x00 0x00 0x00 0x00
+0x00 0x00 0x00 0x00
+
+0x00 0x00 0x00 0x00
+0x00 0x21 0x22 0x00
+0x00 0x61 0x62 0x00
+0x00 0x68 0x69 0x00
+
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+0x0000 0x0000 0x0000 0
+
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000
+
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+0x0000 0x0000 0x0000 0x0000 0x0000
+
+0 0x00
+
+0x70 100000000
+0x70 25000
+0x70 100000
+0x70 1
+0x21 5
+0x00 1
+0x00 1
+0x00 1
+
+1 0x4 0x21 1 0x4 0x22
+0 0x0 0x00 0 0x0 0x00
+0 0x0 0x00 0 0x0 0x00
+0 0x0 0x00 0 0x0 0x00
+
+0x21 0x0 0x22 0x0
+0x2d 0x0 0x2e 0x0
+0x64 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+0x00 0x0 0x00 0x0
+</code></pre>
+<p><a href="#convert">&#x56DE;&#x5230; convert</a></p>
+<h3 id="&#x8FD0;&#x884C;config"><a name="&#x8FD0;&#x884C;config" class="plugin-anchor" href="#&#x8FD0;&#x884C;config"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x884C;config</h3>
+<p><a href="#config">&#x56DE;&#x5230; config</a></p>
+<pre><code class="lang-bash">$ ./bin/config <span class="hljs-_">-l</span> examples/example_logic_0.txt
+0x0000 0x0000 0x6666                  rj45 <span class="hljs-built_in">enable</span> A, B, C
+0x0000 0x0000 0x6660                  pl out <span class="hljs-built_in">enable</span> A, B, C
+0x0000 0x0000 0x0000                  front input inverse A, B, C
+0x0000 0x0000 0x0000                  front output inverse A, B, C
+
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> A0-A3
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> A4-A7
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> A8-A11
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> A12-A15
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> B0-B3
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> B4-B7
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> B8-B11
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> B12-B15
+0x00 0x00 0x00 0x00                   front io <span class="hljs-built_in">source</span> C0-C3
+0x00 0x21 0x22 0x00                   front io <span class="hljs-built_in">source</span> C4-C7
+0x00 0x61 0x62 0x00                   front io <span class="hljs-built_in">source</span> C8-C11
+0x00 0x68 0x69 0x00                   front io <span class="hljs-built_in">source</span> C12-C15
+
+0x0000 0x0000 0x0000 0                multi 0 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 1 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 2 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 3 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 4 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 5 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 6 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 7 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 8 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 9 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 10 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 11 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 12 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 13 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 14 front A, B, C selections and threshold
+0x0000 0x0000 0x0000 0                multi 15 front A, B, C selections and threshold
+
+0x0000 0x0000 0x0000 0x0000           or gate 0 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 1 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 2 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 3 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 4 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 5 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 6 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 7 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 8 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 9 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 10 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 11 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 12 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 13 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 14 front A, B, C and multi selections
+0x0000 0x0000 0x0000 0x0000           or gate 15 front A, B, C and multi selections
+
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 0 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 1 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 2 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 3 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 4 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 5 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 6 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 7 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 8 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 9 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 10 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 11 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 12 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 13 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 14 front A, B, C, multi and or gates selections
+0x0000 0x0000 0x0000 0x0000 0x0000    and gate 15 front A, B, C, multi and or gates selections
+
+0 0x00                                back <span class="hljs-built_in">enable</span> and <span class="hljs-built_in">source</span>
+
+0x70 100000000                        divider 0 <span class="hljs-built_in">source</span> selection and divisor
+0x70 25000                            divider 1 <span class="hljs-built_in">source</span> selection and divisor
+0x70 100000                           divider 2 <span class="hljs-built_in">source</span> selection and divisor
+0x70 1                                divider 3 <span class="hljs-built_in">source</span> selection and divisor
+0x21 5                                divider 4 <span class="hljs-built_in">source</span> selection and divisor
+0x00 1                                divider 5 <span class="hljs-built_in">source</span> selection and divisor
+0x00 1                                divider 6 <span class="hljs-built_in">source</span> selection and divisor
+0x00 1                                divider 7 <span class="hljs-built_in">source</span> selection and divisor
+
+1 0x4 0x21 1 0x4 0x22                 divider gate 0, 1 operators, sources and the other sources
+0 0x0 0x00 0 0x0 0x00                 divider gate 2, 3 operators, sources and the other sources
+0 0x0 0x00 0 0x0 0x00                 divider gate 4, 5 operators, sources and the other sources
+0 0x0 0x00 0 0x0 0x00                 divider gate 6, 7 operators, sources and the other sources
+
+0x21 0x0 0x22 0x0                     scaler 0, 1 sources and clock sources
+0x2d 0x0 0x2e 0x0                     scaler 2, 3 sources and clock sources
+0x64 0x0 0x00 0x0                     scaler 4, 5 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 6, 7 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 8, 9 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 10, 11 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 12, 13 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 14, 15 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 16, 17 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 18, 19 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 20, 21 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 22, 23 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 24, 25 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 26, 27 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 28, 29 sources and clock sources
+0x00 0x0 0x00 0x0                     scaler 30, 31 sources and clock sources
+</code></pre>
+<p><a href="#config">&#x56DE;&#x5230; config</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="config.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: config 库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"standalone","level":"1.4.4","depth":2,"previous":{"title":"config 库","level":"1.4.3","depth":2,"path":"developer/config.md","ref":"developer/config.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"developer/standalone.md","mtime":"2022-08-18T08:57:32.605Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T08:59:57.734Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

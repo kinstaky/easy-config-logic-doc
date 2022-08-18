@@ -1,0 +1,1306 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ecl::ProductionBase · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classecl_1_1ProductionFactory.html" />
+    
+    
+    <link rel="prev" href="classecl_1_1Production.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../hardware/hardware.html">
+            
+                <a href="../../hardware/hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../hardware/mztio.html">
+            
+                <a href="../../hardware/mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../hardware/pixie16.html">
+            
+                <a href="../../hardware/pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../hardware/combine.html">
+            
+                <a href="../../hardware/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../user-guide/user-guide.html">
+            
+                <a href="../../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/quick-start.html">
+            
+                <a href="../../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/config-syntax.html">
+            
+                <a href="../../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-examples.html">
+            
+                <a href="../../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/advanced.html">
+            
+                <a href="../../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../developer/developer.html">
+            
+                <a href="../../developer/developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../developer/syntax.html">
+            
+                <a href="../../developer/syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../developer/standardize.html">
+            
+                <a href="../../developer/standardize.html">
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../developer/config.html">
+            
+                <a href="../../developer/config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../developer/standalone.html">
+            
+                <a href="../../developer/standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../index_classes.html">
+            
+                <a href="../index_classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="structecl_1_1Action.html">
+            
+                <a href="structecl_1_1Action.html">
+            
+                    
+                    ecl::Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="classecl_1_1ActionTable.html">
+            
+                <a href="classecl_1_1ActionTable.html">
+            
+                    
+                    ecl::ActionTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="structecl_1_1DividerGateInfo.html">
+            
+                <a href="structecl_1_1DividerGateInfo.html">
+            
+                    
+                    ecl::DividerGateInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="structecl_1_1DividerInfo.html">
+            
+                <a href="structecl_1_1DividerInfo.html">
+            
+                    
+                    ecl::DividerInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="classecl_1_1Grammar.html">
+            
+                <a href="classecl_1_1Grammar.html">
+            
+                    
+                    ecl::Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="classecl_1_1Identifier.html">
+            
+                <a href="classecl_1_1Identifier.html">
+            
+                    
+                    ecl::Identifier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.7" data-path="classecl_1_1Lexer.html">
+            
+                <a href="classecl_1_1Lexer.html">
+            
+                    
+                    ecl::Lexer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.8" data-path="classecl_1_1LogicalGrammar.html">
+            
+                <a href="classecl_1_1LogicalGrammar.html">
+            
+                    
+                    ecl::LogicalGrammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.9" data-path="classecl_1_1LogicComparer.html">
+            
+                <a href="classecl_1_1LogicComparer.html">
+            
+                    
+                    ecl::LogicComparer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.10" data-path="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                    
+                    ecl::LogicComparer::IdentifierInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.11" data-path="structecl_1_1LogicComparer_1_1Node.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1Node.html">
+            
+                    
+                    ecl::LogicComparer::Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.12" data-path="classecl_1_1LogicParser.html">
+            
+                <a href="classecl_1_1LogicParser.html">
+            
+                    
+                    ecl::LogicParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.13" data-path="classecl_1_1MemoryConfig.html">
+            
+                <a href="classecl_1_1MemoryConfig.html">
+            
+                    
+                    ecl::MemoryConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.14" data-path="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                <a href="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                    
+                    ecl::MemoryConfig::Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.15" data-path="classecl_1_1Operator.html">
+            
+                <a href="classecl_1_1Operator.html">
+            
+                    
+                    ecl::Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.16" data-path="structecl_1_1OutputInfo.html">
+            
+                <a href="structecl_1_1OutputInfo.html">
+            
+                    
+                    ecl::OutputInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.17" data-path="classecl_1_1Production.html">
+            
+                <a href="classecl_1_1Production.html">
+            
+                    
+                    ecl::Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.18" data-path="classecl_1_1ProductionBase.html">
+            
+                <a href="classecl_1_1ProductionBase.html">
+            
+                    
+                    ecl::ProductionBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.19" data-path="classecl_1_1ProductionFactory.html">
+            
+                <a href="classecl_1_1ProductionFactory.html">
+            
+                    
+                    ecl::ProductionFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.20" data-path="classecl_1_1ProductionFactorySet.html">
+            
+                <a href="classecl_1_1ProductionFactorySet.html">
+            
+                    
+                    ecl::ProductionFactorySet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.21" data-path="classecl_1_1ProductionItem.html">
+            
+                <a href="classecl_1_1ProductionItem.html">
+            
+                    
+                    ecl::ProductionItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.22" data-path="classecl_1_1ProductionItemCollection.html">
+            
+                <a href="classecl_1_1ProductionItemCollection.html">
+            
+                    
+                    ecl::ProductionItemCollection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.23" data-path="classecl_1_1SLRSyntaxParser.html">
+            
+                <a href="classecl_1_1SLRSyntaxParser.html">
+            
+                    
+                    ecl::SLRSyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.24" data-path="classecl_1_1StandardLogicNode.html">
+            
+                <a href="classecl_1_1StandardLogicNode.html">
+            
+                    
+                    ecl::StandardLogicNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.25" data-path="classecl_1_1Symbol.html">
+            
+                <a href="classecl_1_1Symbol.html">
+            
+                    
+                    ecl::Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.26" data-path="classecl_1_1SyntaxParser.html">
+            
+                <a href="classecl_1_1SyntaxParser.html">
+            
+                    
+                    ecl::SyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.27" data-path="classecl_1_1Token.html">
+            
+                <a href="classecl_1_1Token.html">
+            
+                    
+                    ecl::Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../index_namespaces.html">
+            
+                <a href="../index_namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../Namespaces/namespaceecl.html">
+            
+                <a href="../Namespaces/namespaceecl.html">
+            
+                    
+                    ecl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../index_files.html">
+            
+                <a href="../index_files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                <a href="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                    
+                    syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                <a href="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                    
+                    syntax/parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../Files/grammar_8h.html">
+            
+                <a href="../Files/grammar_8h.html">
+            
+                    
+                    grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../Files/lexer_8h.html">
+            
+                <a href="../Files/lexer_8h.html">
+            
+                    
+                    lexer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../Files/production_8h.html">
+            
+                <a href="../Files/production_8h.html">
+            
+                    
+                    production.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../Files/syntax__parser_8h.html">
+            
+                <a href="../Files/syntax__parser_8h.html">
+            
+                    
+                    syntax_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../Files/token_8h.html">
+            
+                <a href="../Files/token_8h.html">
+            
+                    
+                    token.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.8" data-path="../Files/logic__comparer_8h.html">
+            
+                <a href="../Files/logic__comparer_8h.html">
+            
+                    
+                    logic_comparer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.9" data-path="../Files/logical__grammar_8h.html">
+            
+                <a href="../Files/logical__grammar_8h.html">
+            
+                    
+                    logical_grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.10" data-path="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                <a href="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                    
+                    standardize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.11" data-path="../Files/standard__logic__node_8h.html">
+            
+                <a href="../Files/standard__logic__node_8h.html">
+            
+                    
+                    standard_logic_node.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.12" data-path="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                <a href="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.13" data-path="../Files/logic__parser_8h.html">
+            
+                <a href="../Files/logic__parser_8h.html">
+            
+                    
+                    logic_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.14" data-path="../Files/memory__config_8h.html">
+            
+                <a href="../Files/memory__config_8h.html">
+            
+                    
+                    memory_config.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ecl::ProductionBase</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="eclproductionbase"><a name="eclproductionbase" class="plugin-anchor" href="#eclproductionbase"><i class="fa fa-link" aria-hidden="true"></i></a>ecl::ProductionBase</h1>
+<p> <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;production.h&gt;</code></p>
+<p>Inherits from <a href="classecl_1_1Symbol.html">ecl::Symbol</a></p>
+<p>Inherited by <a href="classecl_1_1Production.html">ecl::Production&lt; EvalType &gt;</a>, <a href="Classes/classecl_1_1ProductionFactory.md">ecl::ProductionFactory&lt; EvalType &gt;</a>, <a href="Classes/classecl_1_1Production.md">ecl::Production&lt; bool &gt;</a>, <a href="Classes/classecl_1_1Production.md">ecl::Production&lt; VarType &gt;</a></p>
+<h2 id="public-functions"><a name="public-functions" class="plugin-anchor" href="#public-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-productionbase">ProductionBase</a></strong>(<a href="Classes/classecl_1_1Symbol.md">Symbol</a> * parent, size_t size, int type)<br>constructor</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-~productionbase">~ProductionBase</a></strong>() =default<br>default destructor</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-setparent">SetParent</a></strong>(<a href="Classes/classecl_1_1ProductionBase.md">ProductionBase</a> * parent)<br>set parent</td>
+</tr>
+<tr>
+<td><a href="classecl_1_1Symbol.html">Symbol</a> *</td>
+<td><strong><a href="Classes/classecl_1_1ProductionBase.md#function-parent">Parent</a></strong>() const<br>abstract method return the parent</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-size">size</a></strong>() const<br>get the size of children (the left hand side symbols)</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-setchild">SetChild</a></strong>(size_t index, <a href="Classes/classecl_1_1Symbol.md">Symbol</a> * child)<br>set child of the syntax tree</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-setchildren">SetChildren</a></strong>(<a href="Classes/classecl_1_1Symbol.md">Symbol</a> * child)<br>set the last child of production</td>
+</tr>
+<tr>
+<td>template <typename... argtypes\=""> <br>int</typename...></td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-setchildren">SetChildren</a></strong>(<a href="Classes/classecl_1_1Symbol.md">Symbol</a> * first, ArgTypes... children)<br>recursively set children of production</td>
+</tr>
+<tr>
+<td><a href="classecl_1_1Symbol.html">Symbol</a> *</td>
+<td><strong><a href="Classes/classecl_1_1ProductionBase.md#function-child">Child</a></strong>(size_t index) const<br>get child from production through index</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#function-iscomplete">IsComplete</a></strong>() const<br>check this production is complete</td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes"><a name="protected-attributes" class="plugin-anchor" href="#protected-attributes"><i class="fa fa-link" aria-hidden="true"></i></a>Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="classecl_1_1Symbol.html">Symbol</a> *</td>
+<td><strong><a href="Classes/classecl_1_1ProductionBase.md#variable-parent-">parent_</a></strong></td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1ProductionBase.html#variable-children-size-">children<em>size</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1Symbol.html">Symbol</a> * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1ProductionBase.md#variable-children-">children_</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-inherited-members"><a name="additional-inherited-members" class="plugin-anchor" href="#additional-inherited-members"><i class="fa fa-link" aria-hidden="true"></i></a>Additional inherited members</h2>
+<p><strong>Public Functions inherited from <a href="classecl_1_1Symbol.html">ecl::Symbol</a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1Symbol.html#function-symbol">Symbol</a></strong>(int type)<br>contructor</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href="classecl_1_1Symbol.html#function-~symbol">~Symbol</a></strong>() =default<br>default destructor</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Symbol.html#function-type">Type</a></strong>() const<br>returns the symbol type</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description"><a name="detailed-description" class="plugin-anchor" href="#detailed-description"><i class="fa fa-link" aria-hidden="true"></i></a>Detailed Description</h2>
+<pre><code class="lang-cpp"><span class="hljs-keyword">class</span> ecl::ProductionBase;
+</code></pre>
+<p>This class is the base class of Prouction, <a href="classecl_1_1ProductionFactory.html">ProductionFactory</a> and ProductionFactoryItem classed. It implements the SetChild and SetChildren methods. </p>
+<h2 id="public-functions-documentation"><a name="public-functions-documentation" class="plugin-anchor" href="#public-functions-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions Documentation</h2>
+<h3 id="function-productionbase"><a name="function-productionbase" class="plugin-anchor" href="#function-productionbase"><i class="fa fa-link" aria-hidden="true"></i></a>function ProductionBase</h3>
+<pre><code class="lang-cpp">ProductionBase(
+    Symbol * parent,
+    <span class="hljs-keyword">size_t</span> size,
+    <span class="hljs-keyword">int</span> type
+)
+</code></pre>
+<p>constructor </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>parent</strong> pointer to the parent </li>
+<li><strong>size</strong> number of symbols in right side of the production </li>
+<li><strong>type</strong> type of the symbol, kSymbolType_Production, kSymbolType_ProductionFactory or kSymbolType_ProductionItem</li>
+</ul>
+<p><strong>Note</strong>: Put this constructor in protected field to prevent its creation. So only the creation of inherited class is allowed.</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-productionbase"><a name="function-productionbase" class="plugin-anchor" href="#function-productionbase"><i class="fa fa-link" aria-hidden="true"></i></a>function ~ProductionBase</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">virtual</span> ~ProductionBase() =<span class="hljs-keyword">default</span>
+</code></pre>
+<p>default destructor </p>
+<h3 id="function-setparent"><a name="function-setparent" class="plugin-anchor" href="#function-setparent"><i class="fa fa-link" aria-hidden="true"></i></a>function SetParent</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">SetParent</span><span class="hljs-params">(
+    ProductionBase * parent
+)</span>
+</span></code></pre>
+<p>set parent </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>parent</strong> pointer to new parent </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-parent"><a name="function-parent" class="plugin-anchor" href="#function-parent"><i class="fa fa-link" aria-hidden="true"></i></a>function Parent</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> Symbol * <span class="hljs-title">Parent</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>abstract method return the parent </p>
+<p><strong>Return</strong>: the pointer to the parent object</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-size"><a name="function-size" class="plugin-anchor" href="#function-size"><i class="fa fa-link" aria-hidden="true"></i></a>function size</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">size</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the size of children (the left hand side symbols) </p>
+<p><strong>Return</strong>: size of children (the left hand side symbols)</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-setchild"><a name="function-setchild" class="plugin-anchor" href="#function-setchild"><i class="fa fa-link" aria-hidden="true"></i></a>function SetChild</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">SetChild</span><span class="hljs-params">(
+    size_t index,
+    Symbol * child
+)</span>
+</span></code></pre>
+<p>set child of the syntax tree </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of the child node in the vector </li>
+<li><strong>child</strong> pointer of the symbol(production or token) </li>
+</ul>
+<p><strong>Return</strong>: 0 if success, -1 on index out of bounds, -2 on invalid symbol pointer</p>
+<p><strong>Note</strong>: This method set child of the vector symbols, .i.e. the syntax tree.</p>
+<p>@exceptsafe shall not throw exceptions. </p>
+<h3 id="function-setchildren"><a name="function-setchildren" class="plugin-anchor" href="#function-setchildren"><i class="fa fa-link" aria-hidden="true"></i></a>function SetChildren</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">SetChildren</span><span class="hljs-params">(
+    Symbol * child
+)</span>
+</span></code></pre>
+<p>set the last child of production </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>child</strong> pointer to the child being set </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on index out of bounds</p>
+<p><strong>Note</strong>: This is the terminal function of the recursively SetChildren method.</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-setchildren"><a name="function-setchildren" class="plugin-anchor" href="#function-setchildren"><i class="fa fa-link" aria-hidden="true"></i></a>function SetChildren</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span>... ArgTypes&gt;
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">SetChildren</span><span class="hljs-params">(
+    Symbol * first,
+    ArgTypes... children
+)</span>
+</span></code></pre>
+<p>recursively set children of production </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>first</strong> pointer to the first setting child </li>
+<li><strong>children</strong> pointer to the children </li>
+</ul>
+<p><strong>Template Parameters</strong>: </p>
+<ul>
+<li><strong>ArgTypes</strong> type of the children (should be <a href="classecl_1_1Symbol.html">Symbol</a> or inherit from <a href="Classes/classecl_1_1Symbol.md">Symbol</a>) </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on index out of bounds</p>
+<p><strong>Note</strong>: This is a recursive function and set children except for the last one.</p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-child"><a name="function-child" class="plugin-anchor" href="#function-child"><i class="fa fa-link" aria-hidden="true"></i></a>function Child</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> Symbol * <span class="hljs-title">Child</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get child from production through index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of child to get </li>
+</ul>
+<p><strong>Return</strong>: pointer to the child at index</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-iscomplete"><a name="function-iscomplete" class="plugin-anchor" href="#function-iscomplete"><i class="fa fa-link" aria-hidden="true"></i></a>function IsComplete</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsComplete</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check this production is complete </p>
+<p><strong>Return</strong>: true on complete, otherwise false</p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h2 id="protected-attributes-documentation"><a name="protected-attributes-documentation" class="plugin-anchor" href="#protected-attributes-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Protected Attributes Documentation</h2>
+<h3 id="variable-parent"><a name="variable-parent" class="plugin-anchor" href="#variable-parent"><i class="fa fa-link" aria-hidden="true"></i></a>variable parent_</h3>
+<pre><code class="lang-cpp">Symbol * parent_;
+</code></pre>
+<h3 id="variable-childrensize"><a name="variable-childrensize" class="plugin-anchor" href="#variable-childrensize"><i class="fa fa-link" aria-hidden="true"></i></a>variable children<em>size</em></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">size_t</span> children_size_;
+</code></pre>
+<h3 id="variable-children"><a name="variable-children" class="plugin-anchor" href="#variable-children"><i class="fa fa-link" aria-hidden="true"></i></a>variable children_</h3>
+<pre><code class="lang-cpp"><span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; Symbol * &gt; children_;
+</code></pre>
+<hr>
+<p>Updated on 2022-08-18 at 21:47:38 +0800</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="classecl_1_1Production.html" class="navigation navigation-prev " aria-label="Previous page: ecl::Production">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classecl_1_1ProductionFactory.html" class="navigation navigation-next " aria-label="Next page: ecl::ProductionFactory">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ecl::ProductionBase","level":"1.5.1.18","depth":3,"next":{"title":"ecl::ProductionFactory","level":"1.5.1.19","depth":3,"path":"reference/Classes/classecl_1_1ProductionFactory.md","ref":"reference/Classes/classecl_1_1ProductionFactory.md","articles":[]},"previous":{"title":"ecl::Production","level":"1.5.1.17","depth":3,"path":"reference/Classes/classecl_1_1Production.md","ref":"reference/Classes/classecl_1_1Production.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Classes/classecl_1_1ProductionBase.md","mtime":"2022-08-18T13:47:38.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T13:47:43.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

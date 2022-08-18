@@ -1,0 +1,1720 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ecl::LogicParser · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classecl_1_1MemoryConfig.html" />
+    
+    
+    <link rel="prev" href="structecl_1_1LogicComparer_1_1Node.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../hardware/hardware.html">
+            
+                <a href="../../hardware/hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../hardware/mztio.html">
+            
+                <a href="../../hardware/mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../hardware/pixie16.html">
+            
+                <a href="../../hardware/pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../hardware/combine.html">
+            
+                <a href="../../hardware/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../user-guide/user-guide.html">
+            
+                <a href="../../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/quick-start.html">
+            
+                <a href="../../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/config-syntax.html">
+            
+                <a href="../../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-examples.html">
+            
+                <a href="../../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/advanced.html">
+            
+                <a href="../../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../developer/developer.html">
+            
+                <a href="../../developer/developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../developer/syntax.html">
+            
+                <a href="../../developer/syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../developer/standardize.html">
+            
+                <a href="../../developer/standardize.html">
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../developer/config.html">
+            
+                <a href="../../developer/config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../developer/standalone.html">
+            
+                <a href="../../developer/standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../index_classes.html">
+            
+                <a href="../index_classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="structecl_1_1Action.html">
+            
+                <a href="structecl_1_1Action.html">
+            
+                    
+                    ecl::Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="classecl_1_1ActionTable.html">
+            
+                <a href="classecl_1_1ActionTable.html">
+            
+                    
+                    ecl::ActionTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="structecl_1_1DividerGateInfo.html">
+            
+                <a href="structecl_1_1DividerGateInfo.html">
+            
+                    
+                    ecl::DividerGateInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="structecl_1_1DividerInfo.html">
+            
+                <a href="structecl_1_1DividerInfo.html">
+            
+                    
+                    ecl::DividerInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="classecl_1_1Grammar.html">
+            
+                <a href="classecl_1_1Grammar.html">
+            
+                    
+                    ecl::Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="classecl_1_1Identifier.html">
+            
+                <a href="classecl_1_1Identifier.html">
+            
+                    
+                    ecl::Identifier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.7" data-path="classecl_1_1Lexer.html">
+            
+                <a href="classecl_1_1Lexer.html">
+            
+                    
+                    ecl::Lexer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.8" data-path="classecl_1_1LogicalGrammar.html">
+            
+                <a href="classecl_1_1LogicalGrammar.html">
+            
+                    
+                    ecl::LogicalGrammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.9" data-path="classecl_1_1LogicComparer.html">
+            
+                <a href="classecl_1_1LogicComparer.html">
+            
+                    
+                    ecl::LogicComparer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.10" data-path="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                    
+                    ecl::LogicComparer::IdentifierInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.11" data-path="structecl_1_1LogicComparer_1_1Node.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1Node.html">
+            
+                    
+                    ecl::LogicComparer::Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.12" data-path="classecl_1_1LogicParser.html">
+            
+                <a href="classecl_1_1LogicParser.html">
+            
+                    
+                    ecl::LogicParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.13" data-path="classecl_1_1MemoryConfig.html">
+            
+                <a href="classecl_1_1MemoryConfig.html">
+            
+                    
+                    ecl::MemoryConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.14" data-path="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                <a href="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                    
+                    ecl::MemoryConfig::Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.15" data-path="classecl_1_1Operator.html">
+            
+                <a href="classecl_1_1Operator.html">
+            
+                    
+                    ecl::Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.16" data-path="structecl_1_1OutputInfo.html">
+            
+                <a href="structecl_1_1OutputInfo.html">
+            
+                    
+                    ecl::OutputInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.17" data-path="classecl_1_1Production.html">
+            
+                <a href="classecl_1_1Production.html">
+            
+                    
+                    ecl::Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.18" data-path="classecl_1_1ProductionBase.html">
+            
+                <a href="classecl_1_1ProductionBase.html">
+            
+                    
+                    ecl::ProductionBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.19" data-path="classecl_1_1ProductionFactory.html">
+            
+                <a href="classecl_1_1ProductionFactory.html">
+            
+                    
+                    ecl::ProductionFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.20" data-path="classecl_1_1ProductionFactorySet.html">
+            
+                <a href="classecl_1_1ProductionFactorySet.html">
+            
+                    
+                    ecl::ProductionFactorySet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.21" data-path="classecl_1_1ProductionItem.html">
+            
+                <a href="classecl_1_1ProductionItem.html">
+            
+                    
+                    ecl::ProductionItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.22" data-path="classecl_1_1ProductionItemCollection.html">
+            
+                <a href="classecl_1_1ProductionItemCollection.html">
+            
+                    
+                    ecl::ProductionItemCollection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.23" data-path="classecl_1_1SLRSyntaxParser.html">
+            
+                <a href="classecl_1_1SLRSyntaxParser.html">
+            
+                    
+                    ecl::SLRSyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.24" data-path="classecl_1_1StandardLogicNode.html">
+            
+                <a href="classecl_1_1StandardLogicNode.html">
+            
+                    
+                    ecl::StandardLogicNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.25" data-path="classecl_1_1Symbol.html">
+            
+                <a href="classecl_1_1Symbol.html">
+            
+                    
+                    ecl::Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.26" data-path="classecl_1_1SyntaxParser.html">
+            
+                <a href="classecl_1_1SyntaxParser.html">
+            
+                    
+                    ecl::SyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.27" data-path="classecl_1_1Token.html">
+            
+                <a href="classecl_1_1Token.html">
+            
+                    
+                    ecl::Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../index_namespaces.html">
+            
+                <a href="../index_namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../Namespaces/namespaceecl.html">
+            
+                <a href="../Namespaces/namespaceecl.html">
+            
+                    
+                    ecl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../index_files.html">
+            
+                <a href="../index_files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                <a href="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                    
+                    syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                <a href="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                    
+                    syntax/parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../Files/grammar_8h.html">
+            
+                <a href="../Files/grammar_8h.html">
+            
+                    
+                    grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../Files/lexer_8h.html">
+            
+                <a href="../Files/lexer_8h.html">
+            
+                    
+                    lexer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../Files/production_8h.html">
+            
+                <a href="../Files/production_8h.html">
+            
+                    
+                    production.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../Files/syntax__parser_8h.html">
+            
+                <a href="../Files/syntax__parser_8h.html">
+            
+                    
+                    syntax_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../Files/token_8h.html">
+            
+                <a href="../Files/token_8h.html">
+            
+                    
+                    token.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.8" data-path="../Files/logic__comparer_8h.html">
+            
+                <a href="../Files/logic__comparer_8h.html">
+            
+                    
+                    logic_comparer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.9" data-path="../Files/logical__grammar_8h.html">
+            
+                <a href="../Files/logical__grammar_8h.html">
+            
+                    
+                    logical_grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.10" data-path="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                <a href="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                    
+                    standardize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.11" data-path="../Files/standard__logic__node_8h.html">
+            
+                <a href="../Files/standard__logic__node_8h.html">
+            
+                    
+                    standard_logic_node.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.12" data-path="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                <a href="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.13" data-path="../Files/logic__parser_8h.html">
+            
+                <a href="../Files/logic__parser_8h.html">
+            
+                    
+                    logic_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.14" data-path="../Files/memory__config_8h.html">
+            
+                <a href="../Files/memory__config_8h.html">
+            
+                    
+                    memory_config.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ecl::LogicParser</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ecllogicparser"><a name="ecllogicparser" class="plugin-anchor" href="#ecllogicparser"><i class="fa fa-link" aria-hidden="true"></i></a>ecl::LogicParser</h1>
+<p><code>#include &lt;logic_parser.h&gt;</code></p>
+<h2 id="public-functions"><a name="public-functions" class="plugin-anchor" href="#public-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-logicparser">LogicParser</a></strong>()<br>constuctor</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-~logicparser">~LogicParser</a></strong>() =default<br>destructor</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-read">Read</a></strong>(const std::string &amp; path)<br>read logic expressions from file</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-parse">Parse</a></strong>(const std::string &amp; expr)<br>parse the expression and generate the standard logic tree</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-clear">Clear</a></strong>()<br>clear the varibles and go back to initial state</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-extendleftlex">ExtendLeftLex</a></strong>(const std::string &amp; expr, std::string &amp; left, std::vector&lt; <a href="namespaceecl.md#typedef-tokenptr">TokenPtr</a> &gt; &amp; tokens, size_t &amp; divisor) const<br>extend the lexer to lex the expression contains assignment</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-extenddividerlex">ExtendDividerLex</a></strong>(const std::string &amp; expr, std::vector&lt; <a href="namespaceecl.md#typedef-tokenptr">TokenPtr</a> &gt; &amp; tokens, size_t &amp; divisor) const<br>extend the lexer to lex the expression contians operator &apos;/&apos;</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-leftsidelex">LeftSideLex</a></strong>(const std::string &amp; expr, std::string &amp; left, std::string &amp; right) const<br>extend the lexer to lex the left side identifier and operator &apos;=&apos;</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-dividerlex">DividerLex</a></strong>(std::string &amp; right, size_t &amp; divisor) const<br>lex the right side of divider definition expression</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-extenddividerparse">ExtendDividerParse</a></strong>(const std::string &amp; left, const std::vector&lt; <a href="namespaceecl.md#typedef-tokenptr">TokenPtr</a> &gt; &amp; right, size_t divisor)<br>parse the expressions includes divider</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-checkidentifiers">CheckIdentifiers</a></strong>(const std::string &amp; left, const std::vector&lt; <a href="namespaceecl.md#typedef-tokenptr">TokenPtr</a> &gt; &amp; right) const<br>check the form of identifiers</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-checkioconflict">CheckIoConflict</a></strong>(const std::string &amp; left, const std::vector&lt; <a href="namespaceecl.md#typedef-tokenptr">TokenPtr</a> &gt; &amp; right) const<br>check whether there is io conflict in</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isfrontio">IsFrontIo</a></strong>(const std::string &amp; name) const<br>check the identifier is in FrontIo form</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-islemoio">IsLemoIo</a></strong>(const std::string &amp; name) const<br>check the identifier is in lemo io form</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isback">IsBack</a></strong>(const std::string &amp; name) const<br>check whether the identifier represents the backplane port</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isclock">IsClock</a></strong>(const std::string &amp; name) const<br>check whether the identifier represents a clock</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isscaler">IsScaler</a></strong>(const std::string &amp; name) const<br>check whether the identifier represents a scaler</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isdivider">IsDivider</a></strong>(const std::string &amp; name) const<br>check whether the identifier represents a divider</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-identifierindex">IdentifierIndex</a></strong>(const std::string &amp; id) const<br>get the identifier index base on its name</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-generategates">GenerateGates</a></strong>(<a href="Classes/classecl_1_1StandardLogicNode.md">StandardLogicNode</a> <em> root, const std::vector&lt; <a href="Classes/classecl_1_1Identifier.md">Identifier</a> </em> &gt; &amp; id_list)<br>generate or-gates and and-gates from standard logic tree</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-generateorgate">GenerateOrGate</a></strong>(std::bitset&lt; <a href="namespaceecl.md#variable-kmaxidentifier">kMaxIdentifier</a> &gt; id_flag, const std::vector&lt; <a href="Classes/classecl_1_1Identifier.md">Identifier</a> * &gt; id_list)<br>generate an or gate</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-generateclock">GenerateClock</a></strong>(const std::string &amp; id)<br>generate a clock according to the identifier name</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-generatedividergate">GenerateDividerGate</a></strong>(const std::vector&lt; <a href="namespaceecl.md#typedef-tokenptr">TokenPtr</a> &gt; &amp; tokens, size_t other_source)<br>generate or-gate or and-gate with divider output</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-parsefrequency">ParseFrequency</a></strong>(const std::string &amp; clock) const<br>parse the clock name and get the frequency</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-frontoutputsize">FrontOutputSize</a></strong>() const<br>get the size of the front port output map</td>
+</tr>
+<tr>
+<td><a href="structecl_1_1OutputInfo.html">OutputInfo</a></td>
+<td><strong><a href="Classes/classecl_1_1LogicParser.md#function-frontoutput">FrontOutput</a></strong>(size_t index) const<br>get the front output port and source by index</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isfrontinput">IsFrontInput</a></strong>(size_t index) const<br>check whether the front port is input port by index</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isfrontoutput">IsFrontOutput</a></strong>(size_t index) const<br>check whether the front port is output port by index</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isfrontlemo">IsFrontLemo</a></strong>(size_t index) const<br>check whether the front port is lemo by index</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-isfrontlogicoutput">IsFrontLogicOutput</a></strong>(size_t index) const<br>check whether the front port is logic output only</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-orgatesize">OrGateSize</a></strong>() const<br>get the number of the or gates</td>
+</tr>
+<tr>
+<td>std::bitset&lt; <a href="namespaceecl.md#variable-korbits">kOrBits</a> &gt;</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-orgate">OrGate</a></strong>(size_t index) const<br>get or-gate bits flags by index</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-andgatesize">AndGateSize</a></strong>() const<br>get the number of the and gates</td>
+</tr>
+<tr>
+<td>std::bitset&lt; <a href="namespaceecl.md#variable-kandbits">kAndBits</a> &gt;</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-andgate">AndGate</a></strong>(size_t index) const<br>get and-gate bits flags by index</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-backenable">BackEnable</a></strong>() const<br>whether to enable back plane output</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-backsource">BackSource</a></strong>() const<br>get the back plane output source</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-clocksize">ClockSize</a></strong>() const<br>get clock size</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-clockfrequency">ClockFrequency</a></strong>(size_t index) const<br>get clock frequency by index</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-secondclock">SecondClock</a></strong>() const<br>get the clock which frequency is 1Hz</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-scalersize">ScalerSize</a></strong>() const<br>get scaler size</td>
+</tr>
+<tr>
+<td><a href="structecl_1_1OutputInfo.html">OutputInfo</a></td>
+<td><strong><a href="Classes/classecl_1_1LogicParser.md#function-scaler">Scaler</a></strong>(size_t index) const<br>get the scaler port and source by index</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-dividersize">DividerSize</a></strong>() const<br>get the divider size</td>
+</tr>
+<tr>
+<td><a href="structecl_1_1DividerInfo.html">DividerInfo</a></td>
+<td><strong><a href="Classes/classecl_1_1LogicParser.md#function-divider">Divider</a></strong>(size_t index) const<br>get the divider information by index</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="classecl_1_1LogicParser.html#function-dividergatesize">DividerGateSize</a></strong>() const<br>get the divider gate size</td>
+</tr>
+<tr>
+<td><a href="structecl_1_1DividerGateInfo.html">DividerGateInfo</a></td>
+<td><strong><a href="Classes/classecl_1_1LogicParser.md#function-dividergate">DividerGate</a></strong>(size_t index) const<br>get the divider gate information by index</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation"><a name="public-functions-documentation" class="plugin-anchor" href="#public-functions-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions Documentation</h2>
+<h3 id="function-logicparser"><a name="function-logicparser" class="plugin-anchor" href="#function-logicparser"><i class="fa fa-link" aria-hidden="true"></i></a>function LogicParser</h3>
+<pre><code class="lang-cpp">LogicParser()
+</code></pre>
+<p>constuctor </p>
+<h3 id="function-logicparser"><a name="function-logicparser" class="plugin-anchor" href="#function-logicparser"><i class="fa fa-link" aria-hidden="true"></i></a>function ~LogicParser</h3>
+<pre><code class="lang-cpp">~LogicParser() =<span class="hljs-keyword">default</span>
+</code></pre>
+<p>destructor </p>
+<h3 id="function-read"><a name="function-read" class="plugin-anchor" href="#function-read"><i class="fa fa-link" aria-hidden="true"></i></a>function Read</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Read</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; path
+)</span>
+</span></code></pre>
+<p>read logic expressions from file </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>path</strong> path of input file </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-parse"><a name="function-parse" class="plugin-anchor" href="#function-parse"><i class="fa fa-link" aria-hidden="true"></i></a>function Parse</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Parse</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; expr
+)</span>
+</span></code></pre>
+<p>parse the expression and generate the standard logic tree </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>expr</strong> the logic expression to parse </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-clear"><a name="function-clear" class="plugin-anchor" href="#function-clear"><i class="fa fa-link" aria-hidden="true"></i></a>function Clear</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Clear</span><span class="hljs-params">()</span>
+</span></code></pre>
+<p>clear the varibles and go back to initial state </p>
+<h3 id="function-extendleftlex"><a name="function-extendleftlex" class="plugin-anchor" href="#function-extendleftlex"><i class="fa fa-link" aria-hidden="true"></i></a>function ExtendLeftLex</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">ExtendLeftLex</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; expr,
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; left,
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; TokenPtr &gt; &amp; tokens,
+    size_t &amp; divisor
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>extend the lexer to lex the expression contains assignment </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>expr</strong> the whole expression includes assignment </li>
+<li><strong>left</strong> the picked left side expression </li>
+<li><strong>tokens</strong> the right side tokens without divider </li>
+<li><strong>divisor</strong> extracted divisor from divider, 0 for no dividers </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<p><strong>Note</strong>: This method extends the <a href="classecl_1_1Lexer.html">Lexer</a> to lex the assignment expression. It recognizes the operator &apos;=&apos; and divides the left and right side expressions.</p>
+<h3 id="function-extenddividerlex"><a name="function-extenddividerlex" class="plugin-anchor" href="#function-extenddividerlex"><i class="fa fa-link" aria-hidden="true"></i></a>function ExtendDividerLex</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">ExtendDividerLex</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; expr,
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; TokenPtr &gt; &amp; tokens,
+    size_t &amp; divisor
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>extend the lexer to lex the expression contians operator &apos;/&apos; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>expr</strong> extend logic expression(inclueds divider) </li>
+<li><strong>tokens</strong> recognize tokens without divider </li>
+<li><strong>divisor</strong> extracted divisor, 0 for no dividers </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<p><strong>Note</strong>: The Analyse method in <a href="classecl_1_1Lexer.html">Lexer</a> can&apos;t recognize both the operator &apos;/&apos; and the following number in divider expression. So this function pick them from the expression to adapt to the <a href="Classes/classecl_1_1Lexer.md">Lexer</a>.</p>
+<h3 id="function-leftsidelex"><a name="function-leftsidelex" class="plugin-anchor" href="#function-leftsidelex"><i class="fa fa-link" aria-hidden="true"></i></a>function LeftSideLex</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">LeftSideLex</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; expr,
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; left,
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; right
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>extend the lexer to lex the left side identifier and operator &apos;=&apos; </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>expr</strong> expression to lex </li>
+<li><strong>left</strong> left side lex result </li>
+<li><strong>right</strong> right side lex result </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-dividerlex"><a name="function-dividerlex" class="plugin-anchor" href="#function-dividerlex"><i class="fa fa-link" aria-hidden="true"></i></a>function DividerLex</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">DividerLex</span><span class="hljs-params">(
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; right,
+    size_t &amp; divisor
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>lex the right side of divider definition expression </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>right</strong> input the whole right side string and output the expression without divider part </li>
+<li><strong>divisor</strong> divisor from the right side string after &apos;/&apos; </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-extenddividerparse"><a name="function-extenddividerparse" class="plugin-anchor" href="#function-extenddividerparse"><i class="fa fa-link" aria-hidden="true"></i></a>function ExtendDividerParse</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">ExtendDividerParse</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; left,
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; TokenPtr &gt; &amp; right,
+    size_t divisor
+)</span>
+</span></code></pre>
+<p>parse the expressions includes divider </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>left</strong> left side string </li>
+<li><strong>right</strong> right side tokens without divider </li>
+<li><strong>divisor</strong> divisor value calculated in lex process </li>
+</ul>
+<p><strong>Return</strong>: generated (identifier, gate, clock, scaler, divider) index, -1 on failure </p>
+<h3 id="function-checkidentifiers"><a name="function-checkidentifiers" class="plugin-anchor" href="#function-checkidentifiers"><i class="fa fa-link" aria-hidden="true"></i></a>function CheckIdentifiers</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">CheckIdentifiers</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; left,
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; TokenPtr &gt; &amp; right
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check the form of identifiers </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>left</strong> left side identifier in string </li>
+<li><strong>right</strong> right side identifiers in vector </li>
+</ul>
+<p><strong>Return</strong>: true if identifier in appropirate form, false otherwise </p>
+<h3 id="function-checkioconflict"><a name="function-checkioconflict" class="plugin-anchor" href="#function-checkioconflict"><i class="fa fa-link" aria-hidden="true"></i></a>function CheckIoConflict</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">CheckIoConflict</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; left,
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; TokenPtr &gt; &amp; right
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether there is io conflict in </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>left</strong> left side identifier name </li>
+<li><strong>right</strong> right side identifier list </li>
+</ul>
+<p><strong>Return</strong>: true if no conflict up to now, false otherwise </p>
+<h3 id="function-isfrontio"><a name="function-isfrontio" class="plugin-anchor" href="#function-isfrontio"><i class="fa fa-link" aria-hidden="true"></i></a>function IsFrontIo</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsFrontIo</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; name
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check the identifier is in FrontIo form </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> the identifier name to check </li>
+</ul>
+<p><strong>Return</strong>: true if in FrontIO form, false otherwise </p>
+<p><strong>Note</strong>: FrontIO form means that the identifier matches one of the input/output port on MZTIO. It should be A0-A31, B0-B31 or C0-C31. Apparently, lemo io form is included in FrontIo form. Be aware of the first letter should be uppercase.</p>
+<h3 id="function-islemoio"><a name="function-islemoio" class="plugin-anchor" href="#function-islemoio"><i class="fa fa-link" aria-hidden="true"></i></a>function IsLemoIo</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsLemoIo</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; name
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check the identifier is in lemo io form </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> the identifier name to check </li>
+</ul>
+<p><strong>Return</strong>: true if in lemo io form, false otherwise </p>
+<p><strong>Note</strong>: Lemo io form means that the identifier matches one of the input/ouput port on daughter card of MZTIO. It should be A16-A31, B16-B31, or C116-C31. It&apos;s similar to the FrontIo form.</p>
+<h3 id="function-isback"><a name="function-isback" class="plugin-anchor" href="#function-isback"><i class="fa fa-link" aria-hidden="true"></i></a>function IsBack</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsBack</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; name
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the identifier represents the backplane port </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> the identifier name to check </li>
+</ul>
+<p><strong>Return</strong>: true if is backplane port, false otherwise </p>
+<h3 id="function-isclock"><a name="function-isclock" class="plugin-anchor" href="#function-isclock"><i class="fa fa-link" aria-hidden="true"></i></a>function IsClock</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsClock</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; name
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the identifier represents a clock </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> the identifier name to check </li>
+</ul>
+<p><strong>Return</strong>: true if is clock, false otherwise </p>
+<h3 id="function-isscaler"><a name="function-isscaler" class="plugin-anchor" href="#function-isscaler"><i class="fa fa-link" aria-hidden="true"></i></a>function IsScaler</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsScaler</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; name
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the identifier represents a scaler </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> the identifier name to check </li>
+</ul>
+<p><strong>Return</strong>: true if is a scaler, false otherwise </p>
+<h3 id="function-isdivider"><a name="function-isdivider" class="plugin-anchor" href="#function-isdivider"><i class="fa fa-link" aria-hidden="true"></i></a>function IsDivider</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">IsDivider</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; name
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the identifier represents a divider </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> the identifier name to check </li>
+</ul>
+<p><strong>Return</strong>: true if is a divider, false otherwise </p>
+<h3 id="function-identifierindex"><a name="function-identifierindex" class="plugin-anchor" href="#function-identifierindex"><i class="fa fa-link" aria-hidden="true"></i></a>function IdentifierIndex</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">size_t</span> IdentifierIndex(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; id
+) <span class="hljs-keyword">const</span>
+</code></pre>
+<p>get the identifier index base on its name </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>id</strong> the name of the identifier </li>
+</ul>
+<p><strong>Return</strong>: index of the identifier </p>
+<p><strong>Note</strong>: The identifier index affect the bitset of or-gates and and-gates. To be convenient, the index 0-47 is FrontIO identifiers. Port A0-A15 matches index 0-15, port B0-B15 matches index 16-31, port C0-C15 matches index 32-47.</p>
+<h3 id="function-generategates"><a name="function-generategates" class="plugin-anchor" href="#function-generategates"><i class="fa fa-link" aria-hidden="true"></i></a>function GenerateGates</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">GenerateGates</span><span class="hljs-params">(
+    StandardLogicNode * root,
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; Identifier * &gt; &amp; id_list
+)</span>
+</span></code></pre>
+<p>generate or-gates and and-gates from standard logic tree </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>root</strong> root of standard logic tree </li>
+<li><strong>id_list</strong> identifier list from the standard logic tree </li>
+</ul>
+<p><strong>Return</strong>: front io port or gate index if success, -1 otherwise </p>
+<h3 id="function-generateorgate"><a name="function-generateorgate" class="plugin-anchor" href="#function-generateorgate"><i class="fa fa-link" aria-hidden="true"></i></a>function GenerateOrGate</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">GenerateOrGate</span><span class="hljs-params">(
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">bitset</span>&lt; kMaxIdentifier &gt; id_flag,
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; Identifier * &gt; id_list
+)</span>
+</span></code></pre>
+<p>generate an or gate </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>id_flag</strong> leaves of the node </li>
+<li><strong>id_list</strong> identifier list from the standard logic tree </li>
+</ul>
+<p><strong>Return</strong>: or gate index, or -1 on failure </p>
+<h3 id="function-generateclock"><a name="function-generateclock" class="plugin-anchor" href="#function-generateclock"><i class="fa fa-link" aria-hidden="true"></i></a>function GenerateClock</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">GenerateClock</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; id
+)</span>
+</span></code></pre>
+<p>generate a clock according to the identifier name </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>id</strong> name of identifier </li>
+</ul>
+<p><strong>Return</strong>: generated clock index, or -1 on failure </p>
+<h3 id="function-generatedividergate"><a name="function-generatedividergate" class="plugin-anchor" href="#function-generatedividergate"><i class="fa fa-link" aria-hidden="true"></i></a>function GenerateDividerGate</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">GenerateDividerGate</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; TokenPtr &gt; &amp; tokens,
+    size_t other_source
+)</span>
+</span></code></pre>
+<p>generate or-gate or and-gate with divider output </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>tokens</strong> tokens of the divider and operator </li>
+<li><strong>other_source</strong> index of the the other source to operate with divider </li>
+</ul>
+<p><strong>Return</strong>: genrated index, or -1 on failure </p>
+<h3 id="function-parsefrequency"><a name="function-parsefrequency" class="plugin-anchor" href="#function-parsefrequency"><i class="fa fa-link" aria-hidden="true"></i></a>function ParseFrequency</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">size_t</span> ParseFrequency(
+    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; clock
+) <span class="hljs-keyword">const</span>
+</code></pre>
+<p>parse the clock name and get the frequency </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>clock</strong> the name of the clock identifier </li>
+</ul>
+<p><strong>Return</strong>: frequency of the clock parsed </p>
+<h3 id="function-frontoutputsize"><a name="function-frontoutputsize" class="plugin-anchor" href="#function-frontoutputsize"><i class="fa fa-link" aria-hidden="true"></i></a>function FrontOutputSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">FrontOutputSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the size of the front port output map </p>
+<p><strong>Return</strong>: size of the front output map </p>
+<h3 id="function-frontoutput"><a name="function-frontoutput" class="plugin-anchor" href="#function-frontoutput"><i class="fa fa-link" aria-hidden="true"></i></a>function FrontOutput</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> OutputInfo <span class="hljs-title">FrontOutput</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the front output port and source by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of the output </li>
+</ul>
+<p><strong>Return</strong>: an <a href="structecl_1_1OutputInfo.html">OutputInfo</a> struct includes information of output port index and output source, otherwise the values in struct are all -1 </p>
+<h3 id="function-isfrontinput"><a name="function-isfrontinput" class="plugin-anchor" href="#function-isfrontinput"><i class="fa fa-link" aria-hidden="true"></i></a>function IsFrontInput</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsFrontInput</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the front port is input port by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of port to check </li>
+</ul>
+<p><strong>Return</strong>: true if is input port, false otherwise </p>
+<h3 id="function-isfrontoutput"><a name="function-isfrontoutput" class="plugin-anchor" href="#function-isfrontoutput"><i class="fa fa-link" aria-hidden="true"></i></a>function IsFrontOutput</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsFrontOutput</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the front port is output port by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of port to check </li>
+</ul>
+<p><strong>Return</strong>: true if is output port, false otherwise </p>
+<h3 id="function-isfrontlemo"><a name="function-isfrontlemo" class="plugin-anchor" href="#function-isfrontlemo"><i class="fa fa-link" aria-hidden="true"></i></a>function IsFrontLemo</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsFrontLemo</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the front port is lemo by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of port to check </li>
+</ul>
+<p><strong>Return</strong>: true if is lemo port, false otherwise </p>
+<h3 id="function-isfrontlogicoutput"><a name="function-isfrontlogicoutput" class="plugin-anchor" href="#function-isfrontlogicoutput"><i class="fa fa-link" aria-hidden="true"></i></a>function IsFrontLogicOutput</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">IsFrontLogicOutput</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>check whether the front port is logic output only </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of port the check </li>
+</ul>
+<p><strong>Return</strong>: true if is logic output, false otherwise </p>
+<h3 id="function-orgatesize"><a name="function-orgatesize" class="plugin-anchor" href="#function-orgatesize"><i class="fa fa-link" aria-hidden="true"></i></a>function OrGateSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">OrGateSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the number of the or gates </p>
+<p><strong>Return</strong>: size of or gates </p>
+<h3 id="function-orgate"><a name="function-orgate" class="plugin-anchor" href="#function-orgate"><i class="fa fa-link" aria-hidden="true"></i></a>function OrGate</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">inline</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">bitset</span>&lt; kOrBits &gt; OrGate(
+    <span class="hljs-keyword">size_t</span> index
+) <span class="hljs-keyword">const</span>
+</code></pre>
+<p>get or-gate bits flags by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of or-gate </li>
+</ul>
+<p><strong>Return</strong>: or-gate bits flag, 0 otherwise </p>
+<h3 id="function-andgatesize"><a name="function-andgatesize" class="plugin-anchor" href="#function-andgatesize"><i class="fa fa-link" aria-hidden="true"></i></a>function AndGateSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">AndGateSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the number of the and gates </p>
+<p><strong>Return</strong>: size of and gates </p>
+<h3 id="function-andgate"><a name="function-andgate" class="plugin-anchor" href="#function-andgate"><i class="fa fa-link" aria-hidden="true"></i></a>function AndGate</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">inline</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">bitset</span>&lt; kAndBits &gt; AndGate(
+    <span class="hljs-keyword">size_t</span> index
+) <span class="hljs-keyword">const</span>
+</code></pre>
+<p>get and-gate bits flags by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of and-gate </li>
+</ul>
+<p><strong>Return</strong>: and-gate bits flag, 0 otherwise </p>
+<h3 id="function-backenable"><a name="function-backenable" class="plugin-anchor" href="#function-backenable"><i class="fa fa-link" aria-hidden="true"></i></a>function BackEnable</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">BackEnable</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>whether to enable back plane output </p>
+<p><strong>Return</strong>: true to enable, false otherwise </p>
+<h3 id="function-backsource"><a name="function-backsource" class="plugin-anchor" href="#function-backsource"><i class="fa fa-link" aria-hidden="true"></i></a>function BackSource</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">BackSource</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the back plane output source </p>
+<p><strong>Return</strong>: source index of back output </p>
+<h3 id="function-clocksize"><a name="function-clocksize" class="plugin-anchor" href="#function-clocksize"><i class="fa fa-link" aria-hidden="true"></i></a>function ClockSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">ClockSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get clock size </p>
+<p><strong>Return</strong>: clock size </p>
+<h3 id="function-clockfrequency"><a name="function-clockfrequency" class="plugin-anchor" href="#function-clockfrequency"><i class="fa fa-link" aria-hidden="true"></i></a>function ClockFrequency</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">ClockFrequency</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get clock frequency by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of the clock </li>
+</ul>
+<p><strong>Return</strong>: clock frequency </p>
+<h3 id="function-secondclock"><a name="function-secondclock" class="plugin-anchor" href="#function-secondclock"><i class="fa fa-link" aria-hidden="true"></i></a>function SecondClock</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">SecondClock</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the clock which frequency is 1Hz </p>
+<p><strong>Return</strong>: the index clock which frequency is 1Hz, -1 on failure </p>
+<h3 id="function-scalersize"><a name="function-scalersize" class="plugin-anchor" href="#function-scalersize"><i class="fa fa-link" aria-hidden="true"></i></a>function ScalerSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">ScalerSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get scaler size </p>
+<p><strong>Return</strong>: scalers size </p>
+<h3 id="function-scaler"><a name="function-scaler" class="plugin-anchor" href="#function-scaler"><i class="fa fa-link" aria-hidden="true"></i></a>function Scaler</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> OutputInfo <span class="hljs-title">Scaler</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the scaler port and source by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of the output </li>
+</ul>
+<p><strong>Return</strong>: an <a href="structecl_1_1OutputInfo.html">OutputInfo</a> struct includes information of output port index and output source, otherwise the values in struct are all -1 </p>
+<h3 id="function-dividersize"><a name="function-dividersize" class="plugin-anchor" href="#function-dividersize"><i class="fa fa-link" aria-hidden="true"></i></a>function DividerSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">DividerSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the divider size </p>
+<p><strong>Return</strong>: divider size </p>
+<h3 id="function-divider"><a name="function-divider" class="plugin-anchor" href="#function-divider"><i class="fa fa-link" aria-hidden="true"></i></a>function Divider</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> DividerInfo <span class="hljs-title">Divider</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the divider information by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of divider to get </li>
+</ul>
+<p><strong>Return</strong>: a struct <a href="structecl_1_1DividerInfo.html">DividerInfo</a> includes divider port, source and divisor , or all -1 in struct on failure </p>
+<h3 id="function-dividergatesize"><a name="function-dividergatesize" class="plugin-anchor" href="#function-dividergatesize"><i class="fa fa-link" aria-hidden="true"></i></a>function DividerGateSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> size_t <span class="hljs-title">DividerGateSize</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the divider gate size </p>
+<p><strong>Return</strong>: size of divider gates </p>
+<h3 id="function-dividergate"><a name="function-dividergate" class="plugin-anchor" href="#function-dividergate"><i class="fa fa-link" aria-hidden="true"></i></a>function DividerGate</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> DividerGateInfo <span class="hljs-title">DividerGate</span><span class="hljs-params">(
+    size_t index
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the divider gate information by index </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of divider gate to get </li>
+</ul>
+<p><strong>Return</strong>: a struct <a href="structecl_1_1DividerGateInfo.html">DividerGateInfo</a> includes divider source, the other source and operator type of divider gate </p>
+<hr>
+<p>Updated on 2022-08-18 at 21:47:38 +0800</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="structecl_1_1LogicComparer_1_1Node.html" class="navigation navigation-prev " aria-label="Previous page: ecl::LogicComparer::Node">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classecl_1_1MemoryConfig.html" class="navigation navigation-next " aria-label="Next page: ecl::MemoryConfig">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ecl::LogicParser","level":"1.5.1.12","depth":3,"next":{"title":"ecl::MemoryConfig","level":"1.5.1.13","depth":3,"path":"reference/Classes/classecl_1_1MemoryConfig.md","ref":"reference/Classes/classecl_1_1MemoryConfig.md","articles":[]},"previous":{"title":"ecl::LogicComparer::Node","level":"1.5.1.11","depth":3,"path":"reference/Classes/structecl_1_1LogicComparer_1_1Node.md","ref":"reference/Classes/structecl_1_1LogicComparer_1_1Node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Classes/classecl_1_1LogicParser.md","mtime":"2022-08-18T13:47:38.196Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T13:47:43.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

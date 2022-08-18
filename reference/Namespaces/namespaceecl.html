@@ -1,0 +1,1464 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ecl · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../index_files.html" />
+    
+    
+    <link rel="prev" href="../index_namespaces.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../hardware/hardware.html">
+            
+                <a href="../../hardware/hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../hardware/mztio.html">
+            
+                <a href="../../hardware/mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../hardware/pixie16.html">
+            
+                <a href="../../hardware/pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../hardware/combine.html">
+            
+                <a href="../../hardware/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../user-guide/user-guide.html">
+            
+                <a href="../../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/quick-start.html">
+            
+                <a href="../../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/config-syntax.html">
+            
+                <a href="../../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-examples.html">
+            
+                <a href="../../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/advanced.html">
+            
+                <a href="../../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../developer/developer.html">
+            
+                <a href="../../developer/developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../developer/syntax.html">
+            
+                <a href="../../developer/syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../developer/standardize.html">
+            
+                <a href="../../developer/standardize.html">
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../developer/config.html">
+            
+                <a href="../../developer/config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../developer/standalone.html">
+            
+                <a href="../../developer/standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../index_classes.html">
+            
+                <a href="../index_classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../Classes/structecl_1_1Action.html">
+            
+                <a href="../Classes/structecl_1_1Action.html">
+            
+                    
+                    ecl::Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../Classes/classecl_1_1ActionTable.html">
+            
+                <a href="../Classes/classecl_1_1ActionTable.html">
+            
+                    
+                    ecl::ActionTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../Classes/structecl_1_1DividerGateInfo.html">
+            
+                <a href="../Classes/structecl_1_1DividerGateInfo.html">
+            
+                    
+                    ecl::DividerGateInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../Classes/structecl_1_1DividerInfo.html">
+            
+                <a href="../Classes/structecl_1_1DividerInfo.html">
+            
+                    
+                    ecl::DividerInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="../Classes/classecl_1_1Grammar.html">
+            
+                <a href="../Classes/classecl_1_1Grammar.html">
+            
+                    
+                    ecl::Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="../Classes/classecl_1_1Identifier.html">
+            
+                <a href="../Classes/classecl_1_1Identifier.html">
+            
+                    
+                    ecl::Identifier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.7" data-path="../Classes/classecl_1_1Lexer.html">
+            
+                <a href="../Classes/classecl_1_1Lexer.html">
+            
+                    
+                    ecl::Lexer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.8" data-path="../Classes/classecl_1_1LogicalGrammar.html">
+            
+                <a href="../Classes/classecl_1_1LogicalGrammar.html">
+            
+                    
+                    ecl::LogicalGrammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.9" data-path="../Classes/classecl_1_1LogicComparer.html">
+            
+                <a href="../Classes/classecl_1_1LogicComparer.html">
+            
+                    
+                    ecl::LogicComparer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.10" data-path="../Classes/structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                <a href="../Classes/structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                    
+                    ecl::LogicComparer::IdentifierInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.11" data-path="../Classes/structecl_1_1LogicComparer_1_1Node.html">
+            
+                <a href="../Classes/structecl_1_1LogicComparer_1_1Node.html">
+            
+                    
+                    ecl::LogicComparer::Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.12" data-path="../Classes/classecl_1_1LogicParser.html">
+            
+                <a href="../Classes/classecl_1_1LogicParser.html">
+            
+                    
+                    ecl::LogicParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.13" data-path="../Classes/classecl_1_1MemoryConfig.html">
+            
+                <a href="../Classes/classecl_1_1MemoryConfig.html">
+            
+                    
+                    ecl::MemoryConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.14" data-path="../Classes/structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                <a href="../Classes/structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                    
+                    ecl::MemoryConfig::Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.15" data-path="../Classes/classecl_1_1Operator.html">
+            
+                <a href="../Classes/classecl_1_1Operator.html">
+            
+                    
+                    ecl::Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.16" data-path="../Classes/structecl_1_1OutputInfo.html">
+            
+                <a href="../Classes/structecl_1_1OutputInfo.html">
+            
+                    
+                    ecl::OutputInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.17" data-path="../Classes/classecl_1_1Production.html">
+            
+                <a href="../Classes/classecl_1_1Production.html">
+            
+                    
+                    ecl::Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.18" data-path="../Classes/classecl_1_1ProductionBase.html">
+            
+                <a href="../Classes/classecl_1_1ProductionBase.html">
+            
+                    
+                    ecl::ProductionBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.19" data-path="../Classes/classecl_1_1ProductionFactory.html">
+            
+                <a href="../Classes/classecl_1_1ProductionFactory.html">
+            
+                    
+                    ecl::ProductionFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.20" data-path="../Classes/classecl_1_1ProductionFactorySet.html">
+            
+                <a href="../Classes/classecl_1_1ProductionFactorySet.html">
+            
+                    
+                    ecl::ProductionFactorySet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.21" data-path="../Classes/classecl_1_1ProductionItem.html">
+            
+                <a href="../Classes/classecl_1_1ProductionItem.html">
+            
+                    
+                    ecl::ProductionItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.22" data-path="../Classes/classecl_1_1ProductionItemCollection.html">
+            
+                <a href="../Classes/classecl_1_1ProductionItemCollection.html">
+            
+                    
+                    ecl::ProductionItemCollection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.23" data-path="../Classes/classecl_1_1SLRSyntaxParser.html">
+            
+                <a href="../Classes/classecl_1_1SLRSyntaxParser.html">
+            
+                    
+                    ecl::SLRSyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.24" data-path="../Classes/classecl_1_1StandardLogicNode.html">
+            
+                <a href="../Classes/classecl_1_1StandardLogicNode.html">
+            
+                    
+                    ecl::StandardLogicNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.25" data-path="../Classes/classecl_1_1Symbol.html">
+            
+                <a href="../Classes/classecl_1_1Symbol.html">
+            
+                    
+                    ecl::Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.26" data-path="../Classes/classecl_1_1SyntaxParser.html">
+            
+                <a href="../Classes/classecl_1_1SyntaxParser.html">
+            
+                    
+                    ecl::SyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.27" data-path="../Classes/classecl_1_1Token.html">
+            
+                <a href="../Classes/classecl_1_1Token.html">
+            
+                    
+                    ecl::Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../index_namespaces.html">
+            
+                <a href="../index_namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.2.1" data-path="namespaceecl.html">
+            
+                <a href="namespaceecl.html">
+            
+                    
+                    ecl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../index_files.html">
+            
+                <a href="../index_files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                <a href="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                    
+                    syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                <a href="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                    
+                    syntax/parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../Files/grammar_8h.html">
+            
+                <a href="../Files/grammar_8h.html">
+            
+                    
+                    grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../Files/lexer_8h.html">
+            
+                <a href="../Files/lexer_8h.html">
+            
+                    
+                    lexer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../Files/production_8h.html">
+            
+                <a href="../Files/production_8h.html">
+            
+                    
+                    production.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../Files/syntax__parser_8h.html">
+            
+                <a href="../Files/syntax__parser_8h.html">
+            
+                    
+                    syntax_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../Files/token_8h.html">
+            
+                <a href="../Files/token_8h.html">
+            
+                    
+                    token.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.8" data-path="../Files/logic__comparer_8h.html">
+            
+                <a href="../Files/logic__comparer_8h.html">
+            
+                    
+                    logic_comparer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.9" data-path="../Files/logical__grammar_8h.html">
+            
+                <a href="../Files/logical__grammar_8h.html">
+            
+                    
+                    logical_grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.10" data-path="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                <a href="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                    
+                    standardize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.11" data-path="../Files/standard__logic__node_8h.html">
+            
+                <a href="../Files/standard__logic__node_8h.html">
+            
+                    
+                    standard_logic_node.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.12" data-path="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                <a href="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.13" data-path="../Files/logic__parser_8h.html">
+            
+                <a href="../Files/logic__parser_8h.html">
+            
+                    
+                    logic_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.14" data-path="../Files/memory__config_8h.html">
+            
+                <a href="../Files/memory__config_8h.html">
+            
+                    
+                    memory_config.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ecl</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ecl"><a name="ecl" class="plugin-anchor" href="#ecl"><i class="fa fa-link" aria-hidden="true"></i></a>ecl</h1>
+<h2 id="classes"><a name="classes" class="plugin-anchor" href="#classes"><i class="fa fa-link" aria-hidden="true"></i></a>Classes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>struct</td>
+<td><strong><a href="structecl_1_1Action.md">ecl::Action</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1ActionTable.md">ecl::ActionTable</a></strong></td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="structecl_1_1DividerGateInfo.md">ecl::DividerGateInfo</a></strong></td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="structecl_1_1DividerInfo.md">ecl::DividerInfo</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Grammar.md">ecl::Grammar</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Identifier.md">ecl::Identifier</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Lexer.md">ecl::Lexer</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1LogicalGrammar.md">ecl::LogicalGrammar</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1LogicComparer.md">ecl::LogicComparer</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1LogicParser.md">ecl::LogicParser</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1MemoryConfig.md">ecl::MemoryConfig</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Operator.md">ecl::Operator</a></strong></td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="structecl_1_1OutputInfo.md">ecl::OutputInfo</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Production.md">ecl::Production</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1ProductionBase.md">ecl::ProductionBase</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1ProductionFactory.md">ecl::ProductionFactory</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1ProductionFactorySet.md">ecl::ProductionFactorySet</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1ProductionItem.md">ecl::ProductionItem</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1ProductionItemCollection.md">ecl::ProductionItemCollection</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1SLRSyntaxParser.md">ecl::SLRSyntaxParser</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1StandardLogicNode.md">ecl::StandardLogicNode</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Symbol.md">ecl::Symbol</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1SyntaxParser.md">ecl::SyntaxParser</a></strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong><a href="classecl_1_1Token.md">ecl::Token</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="types"><a name="types" class="plugin-anchor" href="#types"><i class="fa fa-link" aria-hidden="true"></i></a>Types</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>typedef std::shared_ptr&lt; <a href="classecl_1_1Token.md">Token</a> &gt;</td>
+<td><strong><a href="namespaceecl.html#typedef-tokenptr">TokenPtr</a></strong></td>
+</tr>
+<tr>
+<td>template <typename evaltype="" \=""> <br>using std::function&lt; EvalType(const std::vector&lt; <a href="classecl_1_1Symbol.md">Symbol</a> * &gt; &amp;)&gt;</typename></td>
+<td><strong><a href="namespaceecl.html#using-actiontype">ActionType</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="functions"><a name="functions" class="plugin-anchor" href="#functions"><i class="fa fa-link" aria-hidden="true"></i></a>Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>template <typename evaltype="" \=""> <br>EvalType</typename></td>
+<td><strong><a href="namespaceecl.html#function-evaluate">Evaluate</a></strong>(<a href="classecl_1_1Symbol.md">Symbol</a> * symbol)<br>helper function to evaluate symbol</td>
+</tr>
+</tbody>
+</table>
+<h2 id="attributes"><a name="attributes" class="plugin-anchor" href="#attributes"><i class="fa fa-link" aria-hidden="true"></i></a>Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-ksymboltype-productionitem">kSymbolType_ProductionItem</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-ksymboltype-productionfactoryset">kSymbolType_ProductionFactorySet</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-ksymboltype-productionfactory">kSymbolType_ProductionFactory</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-ksymboltype-production">kSymbolType_Production</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-ksymboltype-identifier">kSymbolType_Identifier</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-ksymboltype-operator">kSymbolType_Operator</a></strong></td>
+</tr>
+<tr>
+<td>const int</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxidentifiers">kMaxIdentifiers</a></strong></td>
+</tr>
+<tr>
+<td>constexpr size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxidentifier">kMaxIdentifier</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-koperatornull">kOperatorNull</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-koperatoror">kOperatorOr</a></strong></td>
+</tr>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href="namespaceecl.html#variable-koperatorand">kOperatorAnd</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kfrontionum">kFrontIoNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-korgatesoffset">kOrGatesOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-korbits">kOrBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxorgates">kMaxOrGates</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kandgatesoffset">kAndGatesOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kandbits">kAndBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxandgates">kMaxAndGates</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kclocksoffset">kClocksOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxclocks">kMaxClocks</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kscalersoffset">kScalersOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxscalers">kMaxScalers</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kbackoffset">kBackOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxback">kMaxBack</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kdividersoffset">kDividersOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxdividers">kMaxDividers</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kdividergatesoffset">kDividerGatesOffset</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kmaxdividergates">kMaxDividerGates</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="namespaceecl.html#variable-kprimaryclockoffset">kPrimaryClockOffset</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="types-documentation"><a name="types-documentation" class="plugin-anchor" href="#types-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Types Documentation</h2>
+<h3 id="typedef-tokenptr"><a name="typedef-tokenptr" class="plugin-anchor" href="#typedef-tokenptr"><i class="fa fa-link" aria-hidden="true"></i></a>typedef TokenPtr</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">shared_ptr</span>&lt;Token&gt; ecl::TokenPtr;
+</code></pre>
+<h3 id="using-actiontype"><a name="using-actiontype" class="plugin-anchor" href="#using-actiontype"><i class="fa fa-link" aria-hidden="true"></i></a>using ActionType</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> EvalType &gt;
+<span class="hljs-keyword">using</span> ecl::ActionType = <span class="hljs-keyword">typedef</span> <span class="hljs-built_in">std</span>::function&lt;EvalType(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Symbol*&gt;&amp;)&gt;;
+</code></pre>
+<h2 id="functions-documentation"><a name="functions-documentation" class="plugin-anchor" href="#functions-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Functions Documentation</h2>
+<h3 id="function-evaluate"><a name="function-evaluate" class="plugin-anchor" href="#function-evaluate"><i class="fa fa-link" aria-hidden="true"></i></a>function Evaluate</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> EvalType &gt;
+<span class="hljs-function">EvalType <span class="hljs-title">Evaluate</span><span class="hljs-params">(
+    Symbol * symbol
+)</span>
+</span></code></pre>
+<p>helper function to evaluate symbol </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>symbol</strong> pointer to the symbol being evaluated</li>
+</ul>
+<p><strong>Exceptions</strong>: </p>
+<ul>
+<li><strong>runtime_error</strong> invalid symbol type or not evaluable symbol type </li>
+</ul>
+<p><strong>Template Parameters</strong>: </p>
+<ul>
+<li><strong>EvalType</strong> type of the expression evaluated </li>
+</ul>
+<p><strong>Return</strong>: evaluation value</p>
+<p><strong>Note</strong>: This method helps generate the action function, since it handles the evaluation of all kinds of symbols.</p>
+<h2 id="attributes-documentation"><a name="attributes-documentation" class="plugin-anchor" href="#attributes-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Attributes Documentation</h2>
+<h3 id="variable-ksymboltypeproductionitem"><a name="variable-ksymboltypeproductionitem" class="plugin-anchor" href="#variable-ksymboltypeproductionitem"><i class="fa fa-link" aria-hidden="true"></i></a>variable kSymbolType_ProductionItem</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kSymbolType_ProductionItem = <span class="hljs-number">-4</span>;
+</code></pre>
+<h3 id="variable-ksymboltypeproductionfactoryset"><a name="variable-ksymboltypeproductionfactoryset" class="plugin-anchor" href="#variable-ksymboltypeproductionfactoryset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kSymbolType_ProductionFactorySet</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kSymbolType_ProductionFactorySet = <span class="hljs-number">-3</span>;
+</code></pre>
+<h3 id="variable-ksymboltypeproductionfactory"><a name="variable-ksymboltypeproductionfactory" class="plugin-anchor" href="#variable-ksymboltypeproductionfactory"><i class="fa fa-link" aria-hidden="true"></i></a>variable kSymbolType_ProductionFactory</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kSymbolType_ProductionFactory = <span class="hljs-number">-2</span>;
+</code></pre>
+<h3 id="variable-ksymboltypeproduction"><a name="variable-ksymboltypeproduction" class="plugin-anchor" href="#variable-ksymboltypeproduction"><i class="fa fa-link" aria-hidden="true"></i></a>variable kSymbolType_Production</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kSymbolType_Production = <span class="hljs-number">-1</span>;
+</code></pre>
+<h3 id="variable-ksymboltypeidentifier"><a name="variable-ksymboltypeidentifier" class="plugin-anchor" href="#variable-ksymboltypeidentifier"><i class="fa fa-link" aria-hidden="true"></i></a>variable kSymbolType_Identifier</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kSymbolType_Identifier = <span class="hljs-number">1</span>;
+</code></pre>
+<h3 id="variable-ksymboltypeoperator"><a name="variable-ksymboltypeoperator" class="plugin-anchor" href="#variable-ksymboltypeoperator"><i class="fa fa-link" aria-hidden="true"></i></a>variable kSymbolType_Operator</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kSymbolType_Operator = <span class="hljs-number">2</span>;
+</code></pre>
+<h3 id="variable-kmaxidentifiers"><a name="variable-kmaxidentifiers" class="plugin-anchor" href="#variable-kmaxidentifiers"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxIdentifiers</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> kMaxIdentifiers = <span class="hljs-number">64</span>;
+</code></pre>
+<h3 id="variable-kmaxidentifier"><a name="variable-kmaxidentifier" class="plugin-anchor" href="#variable-kmaxidentifier"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxIdentifier</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">size_t</span> kMaxIdentifier = <span class="hljs-number">64</span>;
+</code></pre>
+<h3 id="variable-koperatornull"><a name="variable-koperatornull" class="plugin-anchor" href="#variable-koperatornull"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOperatorNull</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kOperatorNull = <span class="hljs-number">0</span>;
+</code></pre>
+<h3 id="variable-koperatoror"><a name="variable-koperatoror" class="plugin-anchor" href="#variable-koperatoror"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOperatorOr</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kOperatorOr = <span class="hljs-number">1</span>;
+</code></pre>
+<h3 id="variable-koperatorand"><a name="variable-koperatorand" class="plugin-anchor" href="#variable-koperatorand"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOperatorAnd</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">int</span> kOperatorAnd = <span class="hljs-number">2</span>;
+</code></pre>
+<h3 id="variable-kfrontionum"><a name="variable-kfrontionum" class="plugin-anchor" href="#variable-kfrontionum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kFrontIoNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kFrontIoNum = <span class="hljs-number">48</span>;
+</code></pre>
+<h3 id="variable-korgatesoffset"><a name="variable-korgatesoffset" class="plugin-anchor" href="#variable-korgatesoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOrGatesOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kOrGatesOffset = kFrontIoNum;
+</code></pre>
+<h3 id="variable-korbits"><a name="variable-korbits" class="plugin-anchor" href="#variable-korbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOrBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kOrBits = kFrontIoNum;
+</code></pre>
+<h3 id="variable-kmaxorgates"><a name="variable-kmaxorgates" class="plugin-anchor" href="#variable-kmaxorgates"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxOrGates</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxOrGates = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-kandgatesoffset"><a name="variable-kandgatesoffset" class="plugin-anchor" href="#variable-kandgatesoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kAndGatesOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kAndGatesOffset = kOrGatesOffset + kMaxOrGates;
+</code></pre>
+<h3 id="variable-kandbits"><a name="variable-kandbits" class="plugin-anchor" href="#variable-kandbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kAndBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kAndBits = kOrBits + kMaxOrGates;
+</code></pre>
+<h3 id="variable-kmaxandgates"><a name="variable-kmaxandgates" class="plugin-anchor" href="#variable-kmaxandgates"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxAndGates</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxAndGates = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-kclocksoffset"><a name="variable-kclocksoffset" class="plugin-anchor" href="#variable-kclocksoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kClocksOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kClocksOffset = kAndGatesOffset + kMaxAndGates;
+</code></pre>
+<h3 id="variable-kmaxclocks"><a name="variable-kmaxclocks" class="plugin-anchor" href="#variable-kmaxclocks"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxClocks</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxClocks = <span class="hljs-number">4</span>;
+</code></pre>
+<h3 id="variable-kscalersoffset"><a name="variable-kscalersoffset" class="plugin-anchor" href="#variable-kscalersoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kScalersOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kScalersOffset = kClocksOffset + kMaxClocks;
+</code></pre>
+<h3 id="variable-kmaxscalers"><a name="variable-kmaxscalers" class="plugin-anchor" href="#variable-kmaxscalers"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxScalers</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxScalers = <span class="hljs-number">32</span>;
+</code></pre>
+<h3 id="variable-kbackoffset"><a name="variable-kbackoffset" class="plugin-anchor" href="#variable-kbackoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kBackOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kBackOffset = kScalersOffset + kMaxScalers;
+</code></pre>
+<h3 id="variable-kmaxback"><a name="variable-kmaxback" class="plugin-anchor" href="#variable-kmaxback"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxBack</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxBack = <span class="hljs-number">1</span>;
+</code></pre>
+<h3 id="variable-kdividersoffset"><a name="variable-kdividersoffset" class="plugin-anchor" href="#variable-kdividersoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividersOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividersOffset = kBackOffset + kMaxBack;
+</code></pre>
+<h3 id="variable-kmaxdividers"><a name="variable-kmaxdividers" class="plugin-anchor" href="#variable-kmaxdividers"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxDividers</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxDividers = <span class="hljs-number">4</span>;
+</code></pre>
+<h3 id="variable-kdividergatesoffset"><a name="variable-kdividergatesoffset" class="plugin-anchor" href="#variable-kdividergatesoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerGatesOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerGatesOffset = kDividersOffset + kMaxDividers;
+</code></pre>
+<h3 id="variable-kmaxdividergates"><a name="variable-kmaxdividergates" class="plugin-anchor" href="#variable-kmaxdividergates"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMaxDividerGates</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMaxDividerGates = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kprimaryclockoffset"><a name="variable-kprimaryclockoffset" class="plugin-anchor" href="#variable-kprimaryclockoffset"><i class="fa fa-link" aria-hidden="true"></i></a>variable kPrimaryClockOffset</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kPrimaryClockOffset = kDividerGatesOffset + kMaxDividerGates;
+</code></pre>
+<hr>
+<p>Updated on 2022-08-18 at 21:47:38 +0800</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../index_namespaces.html" class="navigation navigation-prev " aria-label="Previous page: Namespaces">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../index_files.html" class="navigation navigation-next " aria-label="Next page: Files">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ecl","level":"1.5.2.1","depth":3,"next":{"title":"Files","level":"1.5.3","depth":2,"path":"reference/index_files.md","ref":"reference/index_files.md","articles":[{"title":"syntax","level":"1.5.3.1","depth":3,"path":"reference/Files/dir_7da585dc58126695b9479e1b6ebea19f.md","ref":"reference/Files/dir_7da585dc58126695b9479e1b6ebea19f.md","articles":[]},{"title":"syntax/parser","level":"1.5.3.2","depth":3,"path":"reference/Files/dir_033c62819f8044885a772cd72bae2e8d.md","ref":"reference/Files/dir_033c62819f8044885a772cd72bae2e8d.md","articles":[]},{"title":"grammar.h","level":"1.5.3.3","depth":3,"path":"reference/Files/grammar_8h.md","ref":"reference/Files/grammar_8h.md","articles":[]},{"title":"lexer.h","level":"1.5.3.4","depth":3,"path":"reference/Files/lexer_8h.md","ref":"reference/Files/lexer_8h.md","articles":[]},{"title":"production.h","level":"1.5.3.5","depth":3,"path":"reference/Files/production_8h.md","ref":"reference/Files/production_8h.md","articles":[]},{"title":"syntax_parser.h","level":"1.5.3.6","depth":3,"path":"reference/Files/syntax__parser_8h.md","ref":"reference/Files/syntax__parser_8h.md","articles":[]},{"title":"token.h","level":"1.5.3.7","depth":3,"path":"reference/Files/token_8h.md","ref":"reference/Files/token_8h.md","articles":[]},{"title":"logic_comparer.h","level":"1.5.3.8","depth":3,"path":"reference/Files/logic__comparer_8h.md","ref":"reference/Files/logic__comparer_8h.md","articles":[]},{"title":"logical_grammar.h","level":"1.5.3.9","depth":3,"path":"reference/Files/logical__grammar_8h.md","ref":"reference/Files/logical__grammar_8h.md","articles":[]},{"title":"standardize","level":"1.5.3.10","depth":3,"path":"reference/Files/dir_4f112575f2ca4a6a5b876032201c10c1.md","ref":"reference/Files/dir_4f112575f2ca4a6a5b876032201c10c1.md","articles":[]},{"title":"standard_logic_node.h","level":"1.5.3.11","depth":3,"path":"reference/Files/standard__logic__node_8h.md","ref":"reference/Files/standard__logic__node_8h.md","articles":[]},{"title":"config","level":"1.5.3.12","depth":3,"path":"reference/Files/dir_9f351d46ce3cc29445a41dc3a31e6919.md","ref":"reference/Files/dir_9f351d46ce3cc29445a41dc3a31e6919.md","articles":[]},{"title":"logic_parser.h","level":"1.5.3.13","depth":3,"path":"reference/Files/logic__parser_8h.md","ref":"reference/Files/logic__parser_8h.md","articles":[]},{"title":"memory_config.h","level":"1.5.3.14","depth":3,"path":"reference/Files/memory__config_8h.md","ref":"reference/Files/memory__config_8h.md","articles":[]}]},"previous":{"title":"Namespaces","level":"1.5.2","depth":2,"path":"reference/index_namespaces.md","ref":"reference/index_namespaces.md","articles":[{"title":"ecl","level":"1.5.2.1","depth":3,"path":"reference/Namespaces/namespaceecl.md","ref":"reference/Namespaces/namespaceecl.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Namespaces/namespaceecl.md","mtime":"2022-08-18T13:47:38.216Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T13:47:43.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

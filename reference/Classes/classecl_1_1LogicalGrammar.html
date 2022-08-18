@@ -1,0 +1,1271 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ecl::LogicalGrammar · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="classecl_1_1LogicComparer.html" />
+    
+    
+    <link rel="prev" href="classecl_1_1Lexer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../hardware/hardware.html">
+            
+                <a href="../../hardware/hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../hardware/mztio.html">
+            
+                <a href="../../hardware/mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../hardware/pixie16.html">
+            
+                <a href="../../hardware/pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../hardware/combine.html">
+            
+                <a href="../../hardware/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../user-guide/user-guide.html">
+            
+                <a href="../../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/quick-start.html">
+            
+                <a href="../../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/config-syntax.html">
+            
+                <a href="../../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-examples.html">
+            
+                <a href="../../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/advanced.html">
+            
+                <a href="../../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../developer/developer.html">
+            
+                <a href="../../developer/developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../developer/syntax.html">
+            
+                <a href="../../developer/syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../developer/standardize.html">
+            
+                <a href="../../developer/standardize.html">
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../developer/config.html">
+            
+                <a href="../../developer/config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../developer/standalone.html">
+            
+                <a href="../../developer/standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../index_classes.html">
+            
+                <a href="../index_classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="structecl_1_1Action.html">
+            
+                <a href="structecl_1_1Action.html">
+            
+                    
+                    ecl::Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="classecl_1_1ActionTable.html">
+            
+                <a href="classecl_1_1ActionTable.html">
+            
+                    
+                    ecl::ActionTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="structecl_1_1DividerGateInfo.html">
+            
+                <a href="structecl_1_1DividerGateInfo.html">
+            
+                    
+                    ecl::DividerGateInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="structecl_1_1DividerInfo.html">
+            
+                <a href="structecl_1_1DividerInfo.html">
+            
+                    
+                    ecl::DividerInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="classecl_1_1Grammar.html">
+            
+                <a href="classecl_1_1Grammar.html">
+            
+                    
+                    ecl::Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="classecl_1_1Identifier.html">
+            
+                <a href="classecl_1_1Identifier.html">
+            
+                    
+                    ecl::Identifier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.7" data-path="classecl_1_1Lexer.html">
+            
+                <a href="classecl_1_1Lexer.html">
+            
+                    
+                    ecl::Lexer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.8" data-path="classecl_1_1LogicalGrammar.html">
+            
+                <a href="classecl_1_1LogicalGrammar.html">
+            
+                    
+                    ecl::LogicalGrammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.9" data-path="classecl_1_1LogicComparer.html">
+            
+                <a href="classecl_1_1LogicComparer.html">
+            
+                    
+                    ecl::LogicComparer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.10" data-path="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                    
+                    ecl::LogicComparer::IdentifierInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.11" data-path="structecl_1_1LogicComparer_1_1Node.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1Node.html">
+            
+                    
+                    ecl::LogicComparer::Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.12" data-path="classecl_1_1LogicParser.html">
+            
+                <a href="classecl_1_1LogicParser.html">
+            
+                    
+                    ecl::LogicParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.13" data-path="classecl_1_1MemoryConfig.html">
+            
+                <a href="classecl_1_1MemoryConfig.html">
+            
+                    
+                    ecl::MemoryConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.14" data-path="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                <a href="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                    
+                    ecl::MemoryConfig::Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.15" data-path="classecl_1_1Operator.html">
+            
+                <a href="classecl_1_1Operator.html">
+            
+                    
+                    ecl::Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.16" data-path="structecl_1_1OutputInfo.html">
+            
+                <a href="structecl_1_1OutputInfo.html">
+            
+                    
+                    ecl::OutputInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.17" data-path="classecl_1_1Production.html">
+            
+                <a href="classecl_1_1Production.html">
+            
+                    
+                    ecl::Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.18" data-path="classecl_1_1ProductionBase.html">
+            
+                <a href="classecl_1_1ProductionBase.html">
+            
+                    
+                    ecl::ProductionBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.19" data-path="classecl_1_1ProductionFactory.html">
+            
+                <a href="classecl_1_1ProductionFactory.html">
+            
+                    
+                    ecl::ProductionFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.20" data-path="classecl_1_1ProductionFactorySet.html">
+            
+                <a href="classecl_1_1ProductionFactorySet.html">
+            
+                    
+                    ecl::ProductionFactorySet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.21" data-path="classecl_1_1ProductionItem.html">
+            
+                <a href="classecl_1_1ProductionItem.html">
+            
+                    
+                    ecl::ProductionItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.22" data-path="classecl_1_1ProductionItemCollection.html">
+            
+                <a href="classecl_1_1ProductionItemCollection.html">
+            
+                    
+                    ecl::ProductionItemCollection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.23" data-path="classecl_1_1SLRSyntaxParser.html">
+            
+                <a href="classecl_1_1SLRSyntaxParser.html">
+            
+                    
+                    ecl::SLRSyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.24" data-path="classecl_1_1StandardLogicNode.html">
+            
+                <a href="classecl_1_1StandardLogicNode.html">
+            
+                    
+                    ecl::StandardLogicNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.25" data-path="classecl_1_1Symbol.html">
+            
+                <a href="classecl_1_1Symbol.html">
+            
+                    
+                    ecl::Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.26" data-path="classecl_1_1SyntaxParser.html">
+            
+                <a href="classecl_1_1SyntaxParser.html">
+            
+                    
+                    ecl::SyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.27" data-path="classecl_1_1Token.html">
+            
+                <a href="classecl_1_1Token.html">
+            
+                    
+                    ecl::Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../index_namespaces.html">
+            
+                <a href="../index_namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../Namespaces/namespaceecl.html">
+            
+                <a href="../Namespaces/namespaceecl.html">
+            
+                    
+                    ecl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../index_files.html">
+            
+                <a href="../index_files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                <a href="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                    
+                    syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                <a href="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                    
+                    syntax/parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../Files/grammar_8h.html">
+            
+                <a href="../Files/grammar_8h.html">
+            
+                    
+                    grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../Files/lexer_8h.html">
+            
+                <a href="../Files/lexer_8h.html">
+            
+                    
+                    lexer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../Files/production_8h.html">
+            
+                <a href="../Files/production_8h.html">
+            
+                    
+                    production.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../Files/syntax__parser_8h.html">
+            
+                <a href="../Files/syntax__parser_8h.html">
+            
+                    
+                    syntax_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../Files/token_8h.html">
+            
+                <a href="../Files/token_8h.html">
+            
+                    
+                    token.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.8" data-path="../Files/logic__comparer_8h.html">
+            
+                <a href="../Files/logic__comparer_8h.html">
+            
+                    
+                    logic_comparer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.9" data-path="../Files/logical__grammar_8h.html">
+            
+                <a href="../Files/logical__grammar_8h.html">
+            
+                    
+                    logical_grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.10" data-path="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                <a href="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                    
+                    standardize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.11" data-path="../Files/standard__logic__node_8h.html">
+            
+                <a href="../Files/standard__logic__node_8h.html">
+            
+                    
+                    standard_logic_node.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.12" data-path="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                <a href="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.13" data-path="../Files/logic__parser_8h.html">
+            
+                <a href="../Files/logic__parser_8h.html">
+            
+                    
+                    logic_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.14" data-path="../Files/memory__config_8h.html">
+            
+                <a href="../Files/memory__config_8h.html">
+            
+                    
+                    memory_config.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ecl::LogicalGrammar</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ecllogicalgrammar"><a name="ecllogicalgrammar" class="plugin-anchor" href="#ecllogicalgrammar"><i class="fa fa-link" aria-hidden="true"></i></a>ecl::LogicalGrammar</h1>
+<p> <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;logical_grammar.h&gt;</code></p>
+<p>Inherits from <a href="classecl_1_1Grammar.html">ecl::Grammar&lt; bool &gt;</a></p>
+<h2 id="public-functions"><a name="public-functions" class="plugin-anchor" href="#public-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1LogicalGrammar.html#function-logicalgrammar">LogicalGrammar</a></strong>()<br>constructor</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href="classecl_1_1LogicalGrammar.html#function-~logicalgrammar">~LogicalGrammar</a></strong>()<br>destructor</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-inherited-members"><a name="additional-inherited-members" class="plugin-anchor" href="#additional-inherited-members"><i class="fa fa-link" aria-hidden="true"></i></a>Additional inherited members</h2>
+<p><strong>Public Functions inherited from <a href="classecl_1_1Grammar.html">ecl::Grammar&lt; bool &gt;</a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1Grammar.html#function-grammar">Grammar</a></strong>()<br>constructor</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-~grammar">~Grammar</a></strong>()<br>destructor</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-addproductionset">AddProductionSet</a></strong>(<a href="Classes/classecl_1_1ProductionFactorySet.md">ProductionFactorySet</a>&lt; VarType &gt; * set, bool start =false)<br>add production set to the grammar</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-iscomplete">IsComplete</a></strong>()<br>check the completion of the grammar</td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1Symbol.html">Symbol</a> * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#function-symbollist">SymbolList</a></strong>() const<br>get the symbol list of this grammar</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-generatecollections">GenerateCollections</a></strong>(int look_ahead =0)<br>generate the item collection of productions</td>
+</tr>
+<tr>
+<td><a href="classecl_1_1ProductionItemCollection.html">ProductionItemCollection</a>&lt; VarType &gt; *</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#function-collection">Collection</a></strong>(size_t index)<br>get the collection through index</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-makeclosure">MakeClosure</a></strong>(<a href="Classes/classecl_1_1ProductionItem.md">ProductionItem</a>&lt; VarType &gt; <em> item, std::vector&lt; <a href="Classes/classecl_1_1ProductionItem.md">ProductionItem</a>&lt; VarType &gt; </em> &gt; &amp; closure)<br>generate the non-core items in the core item closure</td>
+</tr>
+<tr>
+<td><a href="classecl_1_1ProductionItem.html">ProductionItem</a>&lt; VarType &gt; *</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#function-nextitem">NextItem</a></strong>(<a href="Classes/classecl_1_1ProductionItem.md">ProductionItem</a>&lt; VarType &gt; <em> item, <a href="Classes/classecl_1_1Symbol.md">Symbol</a> *</em> symbol)<br>get the next item which receive one more symbol</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-collectiongoto">CollectionGoto</a></strong>(size_t collection, size_t symbol)<br>get the goto action through the collection and symbol index</td>
+</tr>
+<tr>
+<td>std::vector&lt; int &gt;</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-first">First</a></strong>(size_t set)<br>find the possible first symbols of a non-terminal item</td>
+</tr>
+<tr>
+<td>std::vector&lt; int &gt;</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-first">First</a></strong>(<a href="Classes/classecl_1_1ProductionFactory.md">ProductionFactory</a>&lt; VarType &gt; * production, size_t child)<br>find the possible first symbols for a list of symbols</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-firstincludeempty">FirstIncludeEmpty</a></strong>(size_t set)<br>whether a set contains null production as first symbol</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-firstincludeempty">FirstIncludeEmpty</a></strong>(<a href="Classes/classecl_1_1ProductionFactory.md">ProductionFactory</a>&lt; VarType &gt; * production, size_t child)<br>whether a list of symbols contains null symbol as first symbol</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-generatefirst">GenerateFirst</a></strong>()<br>gernerate the first list and first include empty vector</td>
+</tr>
+<tr>
+<td>std::vector&lt; int &gt;</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-following">Following</a></strong>(size_t set)<br>find the follwing symbol of a non-terminal symbol</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-generatefollowing">GenerateFollowing</a></strong>()<br>generate the following table</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-findset">FindSet</a></strong>(<a href="Classes/classecl_1_1ProductionFactorySet.md">ProductionFactorySet</a>&lt; VarType &gt; * set)<br>get the index of the production set</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-findsymbol">FindSymbol</a></strong>(<a href="Classes/classecl_1_1Symbol.md">Symbol</a> * symbol)<br>get the index of the symbol</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1Grammar.html#function-productionsetsize">ProductionSetSize</a></strong>() const<br>get the size of the production set</td>
+</tr>
+<tr>
+<td><a href="classecl_1_1ProductionFactorySet.html">ProductionFactorySet</a>&lt; VarType &gt; *</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#function-productionset">ProductionSet</a></strong>(size_t index) const<br>get the specific production set through index</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Protected Attributes inherited from <a href="classecl_1_1Grammar.html">ecl::Grammar&lt; bool &gt;</a></strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1ProductionFactorySet.html">ProductionFactorySet</a>&lt; VarType &gt; * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#variable-production-sets-">production<em>sets</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1Symbol.html">Symbol</a> * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#variable-symbol-list-">symbol<em>list</em></a></strong></td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1Grammar.html#variable-generate-first-">generate<em>first</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; std::set&lt; int &gt; &gt;</td>
+<td><strong><a href="classecl_1_1Grammar.html#variable-first-list-">first<em>list</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; bool &gt;</td>
+<td><strong><a href="classecl_1_1Grammar.html#variable-first-include-empty-">first<em>include_empty</em></a></strong></td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="classecl_1_1Grammar.html#variable-generate-following-">generate<em>following</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; std::set&lt; int &gt; &gt;</td>
+<td><strong><a href="classecl_1_1Grammar.html#variable-following-list-">following<em>list</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1ProductionItem.html">ProductionItem</a>&lt; VarType &gt; * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#variable-core-items-">core<em>items</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1ProductionItem.html">ProductionItem</a>&lt; VarType &gt; * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#variable-non-core-items-">non<em>core_items</em></a></strong></td>
+</tr>
+<tr>
+<td>std::vector&lt; <a href="classecl_1_1ProductionItemCollection.html">ProductionItemCollection</a>&lt; VarType &gt; * &gt;</td>
+<td><strong><a href="Classes/classecl_1_1Grammar.md#variable-collections-">collections_</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description"><a name="detailed-description" class="plugin-anchor" href="#detailed-description"><i class="fa fa-link" aria-hidden="true"></i></a>Detailed Description</h2>
+<pre><code class="lang-cpp"><span class="hljs-keyword">class</span> ecl::LogicalGrammar;
+</code></pre>
+<p>This class represents a logical grammar that only includes operations and &apos;&amp;&apos; and or &apos;|&apos;. The context-free grammar is: 0. S -&gt; E</p>
+<ol>
+<li>E -&gt; E | T<ul>
+<li>E -&gt; E &amp; T</li>
+</ul>
+</li>
+<li>E -&gt; T</li>
+<li>T -&gt; ( E )</li>
+<li>T -&gt; id </li>
+</ol>
+<h2 id="public-functions-documentation"><a name="public-functions-documentation" class="plugin-anchor" href="#public-functions-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions Documentation</h2>
+<h3 id="function-logicalgrammar"><a name="function-logicalgrammar" class="plugin-anchor" href="#function-logicalgrammar"><i class="fa fa-link" aria-hidden="true"></i></a>function LogicalGrammar</h3>
+<pre><code class="lang-cpp">LogicalGrammar()
+</code></pre>
+<p>constructor </p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<h3 id="function-logicalgrammar"><a name="function-logicalgrammar" class="plugin-anchor" href="#function-logicalgrammar"><i class="fa fa-link" aria-hidden="true"></i></a>function ~LogicalGrammar</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">virtual</span> ~LogicalGrammar()
+</code></pre>
+<p>destructor </p>
+<p>@exceptsafe Shall not throw exceptions. </p>
+<hr>
+<p>Updated on 2022-08-18 at 21:47:38 +0800</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="classecl_1_1Lexer.html" class="navigation navigation-prev " aria-label="Previous page: ecl::Lexer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="classecl_1_1LogicComparer.html" class="navigation navigation-next " aria-label="Next page: ecl::LogicComparer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ecl::LogicalGrammar","level":"1.5.1.8","depth":3,"next":{"title":"ecl::LogicComparer","level":"1.5.1.9","depth":3,"path":"reference/Classes/classecl_1_1LogicComparer.md","ref":"reference/Classes/classecl_1_1LogicComparer.md","articles":[]},"previous":{"title":"ecl::Lexer","level":"1.5.1.7","depth":3,"path":"reference/Classes/classecl_1_1Lexer.md","ref":"reference/Classes/classecl_1_1Lexer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Classes/classecl_1_1LogicalGrammar.md","mtime":"2022-08-18T13:47:38.180Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T13:47:43.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

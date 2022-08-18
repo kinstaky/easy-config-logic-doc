@@ -1,0 +1,1439 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ecl::MemoryConfig · easy-config-logic 说明文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mathjax-commonhtml/mathjax.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="structecl_1_1MemoryConfig_1_1Memory.html" />
+    
+    
+    <link rel="prev" href="classecl_1_1LogicParser.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../hardware/hardware.html">
+            
+                <a href="../../hardware/hardware.html">
+            
+                    
+                    硬件说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../hardware/mztio.html">
+            
+                <a href="../../hardware/mztio.html">
+            
+                    
+                    逻辑插件 MZTIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../hardware/pixie16.html">
+            
+                <a href="../../hardware/pixie16.html">
+            
+                    
+                    获取插件 pixie16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../hardware/combine.html">
+            
+                <a href="../../hardware/combine.html">
+            
+                    
+                    结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../user-guide/user-guide.html">
+            
+                <a href="../../user-guide/user-guide.html">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/quick-start.html">
+            
+                <a href="../../user-guide/quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/config-syntax.html">
+            
+                <a href="../../user-guide/config-syntax.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-examples.html">
+            
+                <a href="../../user-guide/config-examples.html">
+            
+                    
+                    配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/advanced.html">
+            
+                <a href="../../user-guide/advanced.html">
+            
+                    
+                    进阶使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../developer/developer.html">
+            
+                <a href="../../developer/developer.html">
+            
+                    
+                    开发者文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../developer/syntax.html">
+            
+                <a href="../../developer/syntax.html">
+            
+                    
+                    syntax 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../developer/standardize.html">
+            
+                <a href="../../developer/standardize.html">
+            
+                    
+                    standardize 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../developer/config.html">
+            
+                <a href="../../developer/config.html">
+            
+                    
+                    config 库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../developer/standalone.html">
+            
+                <a href="../../developer/standalone.html">
+            
+                    
+                    standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../index_classes.html">
+            
+                <a href="../index_classes.html">
+            
+                    
+                    Classes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="structecl_1_1Action.html">
+            
+                <a href="structecl_1_1Action.html">
+            
+                    
+                    ecl::Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="classecl_1_1ActionTable.html">
+            
+                <a href="classecl_1_1ActionTable.html">
+            
+                    
+                    ecl::ActionTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="structecl_1_1DividerGateInfo.html">
+            
+                <a href="structecl_1_1DividerGateInfo.html">
+            
+                    
+                    ecl::DividerGateInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="structecl_1_1DividerInfo.html">
+            
+                <a href="structecl_1_1DividerInfo.html">
+            
+                    
+                    ecl::DividerInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="classecl_1_1Grammar.html">
+            
+                <a href="classecl_1_1Grammar.html">
+            
+                    
+                    ecl::Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="classecl_1_1Identifier.html">
+            
+                <a href="classecl_1_1Identifier.html">
+            
+                    
+                    ecl::Identifier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.7" data-path="classecl_1_1Lexer.html">
+            
+                <a href="classecl_1_1Lexer.html">
+            
+                    
+                    ecl::Lexer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.8" data-path="classecl_1_1LogicalGrammar.html">
+            
+                <a href="classecl_1_1LogicalGrammar.html">
+            
+                    
+                    ecl::LogicalGrammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.9" data-path="classecl_1_1LogicComparer.html">
+            
+                <a href="classecl_1_1LogicComparer.html">
+            
+                    
+                    ecl::LogicComparer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.10" data-path="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1IdentifierInfo.html">
+            
+                    
+                    ecl::LogicComparer::IdentifierInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.11" data-path="structecl_1_1LogicComparer_1_1Node.html">
+            
+                <a href="structecl_1_1LogicComparer_1_1Node.html">
+            
+                    
+                    ecl::LogicComparer::Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.12" data-path="classecl_1_1LogicParser.html">
+            
+                <a href="classecl_1_1LogicParser.html">
+            
+                    
+                    ecl::LogicParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.13" data-path="classecl_1_1MemoryConfig.html">
+            
+                <a href="classecl_1_1MemoryConfig.html">
+            
+                    
+                    ecl::MemoryConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.14" data-path="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                <a href="structecl_1_1MemoryConfig_1_1Memory.html">
+            
+                    
+                    ecl::MemoryConfig::Memory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.15" data-path="classecl_1_1Operator.html">
+            
+                <a href="classecl_1_1Operator.html">
+            
+                    
+                    ecl::Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.16" data-path="structecl_1_1OutputInfo.html">
+            
+                <a href="structecl_1_1OutputInfo.html">
+            
+                    
+                    ecl::OutputInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.17" data-path="classecl_1_1Production.html">
+            
+                <a href="classecl_1_1Production.html">
+            
+                    
+                    ecl::Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.18" data-path="classecl_1_1ProductionBase.html">
+            
+                <a href="classecl_1_1ProductionBase.html">
+            
+                    
+                    ecl::ProductionBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.19" data-path="classecl_1_1ProductionFactory.html">
+            
+                <a href="classecl_1_1ProductionFactory.html">
+            
+                    
+                    ecl::ProductionFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.20" data-path="classecl_1_1ProductionFactorySet.html">
+            
+                <a href="classecl_1_1ProductionFactorySet.html">
+            
+                    
+                    ecl::ProductionFactorySet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.21" data-path="classecl_1_1ProductionItem.html">
+            
+                <a href="classecl_1_1ProductionItem.html">
+            
+                    
+                    ecl::ProductionItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.22" data-path="classecl_1_1ProductionItemCollection.html">
+            
+                <a href="classecl_1_1ProductionItemCollection.html">
+            
+                    
+                    ecl::ProductionItemCollection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.23" data-path="classecl_1_1SLRSyntaxParser.html">
+            
+                <a href="classecl_1_1SLRSyntaxParser.html">
+            
+                    
+                    ecl::SLRSyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.24" data-path="classecl_1_1StandardLogicNode.html">
+            
+                <a href="classecl_1_1StandardLogicNode.html">
+            
+                    
+                    ecl::StandardLogicNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.25" data-path="classecl_1_1Symbol.html">
+            
+                <a href="classecl_1_1Symbol.html">
+            
+                    
+                    ecl::Symbol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.26" data-path="classecl_1_1SyntaxParser.html">
+            
+                <a href="classecl_1_1SyntaxParser.html">
+            
+                    
+                    ecl::SyntaxParser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.27" data-path="classecl_1_1Token.html">
+            
+                <a href="classecl_1_1Token.html">
+            
+                    
+                    ecl::Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../index_namespaces.html">
+            
+                <a href="../index_namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../Namespaces/namespaceecl.html">
+            
+                <a href="../Namespaces/namespaceecl.html">
+            
+                    
+                    ecl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../index_files.html">
+            
+                <a href="../index_files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                <a href="../Files/dir_7da585dc58126695b9479e1b6ebea19f.html">
+            
+                    
+                    syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                <a href="../Files/dir_033c62819f8044885a772cd72bae2e8d.html">
+            
+                    
+                    syntax/parser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../Files/grammar_8h.html">
+            
+                <a href="../Files/grammar_8h.html">
+            
+                    
+                    grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../Files/lexer_8h.html">
+            
+                <a href="../Files/lexer_8h.html">
+            
+                    
+                    lexer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../Files/production_8h.html">
+            
+                <a href="../Files/production_8h.html">
+            
+                    
+                    production.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../Files/syntax__parser_8h.html">
+            
+                <a href="../Files/syntax__parser_8h.html">
+            
+                    
+                    syntax_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../Files/token_8h.html">
+            
+                <a href="../Files/token_8h.html">
+            
+                    
+                    token.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.8" data-path="../Files/logic__comparer_8h.html">
+            
+                <a href="../Files/logic__comparer_8h.html">
+            
+                    
+                    logic_comparer.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.9" data-path="../Files/logical__grammar_8h.html">
+            
+                <a href="../Files/logical__grammar_8h.html">
+            
+                    
+                    logical_grammar.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.10" data-path="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                <a href="../Files/dir_4f112575f2ca4a6a5b876032201c10c1.html">
+            
+                    
+                    standardize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.11" data-path="../Files/standard__logic__node_8h.html">
+            
+                <a href="../Files/standard__logic__node_8h.html">
+            
+                    
+                    standard_logic_node.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.12" data-path="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                <a href="../Files/dir_9f351d46ce3cc29445a41dc3a31e6919.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.13" data-path="../Files/logic__parser_8h.html">
+            
+                <a href="../Files/logic__parser_8h.html">
+            
+                    
+                    logic_parser.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.14" data-path="../Files/memory__config_8h.html">
+            
+                <a href="../Files/memory__config_8h.html">
+            
+                    
+                    memory_config.h
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ecl::MemoryConfig</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="eclmemoryconfig"><a name="eclmemoryconfig" class="plugin-anchor" href="#eclmemoryconfig"><i class="fa fa-link" aria-hidden="true"></i></a>ecl::MemoryConfig</h1>
+<p><code>#include &lt;memory_config.h&gt;</code></p>
+<h2 id="public-classes"><a name="public-classes" class="plugin-anchor" href="#public-classes"><i class="fa fa-link" aria-hidden="true"></i></a>Public Classes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>struct</td>
+<td><strong><a href="structecl_1_1MemoryConfig_1_1Memory.html">Memory</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions"><a name="public-functions" class="plugin-anchor" href="#public-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-memoryconfig">MemoryConfig</a></strong>()<br>Construct a new <a href="">Memory</a> Config object.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-~memoryconfig">~MemoryConfig</a></strong>() =default<br>default destructor</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-clear">Clear</a></strong>()<br>clear the memory values</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-read">Read</a></strong>(<a href="Classes/classecl_1_1LogicParser.md">LogicParser</a> * parser)<br>read config from logic_parser</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-read">Read</a></strong>(const char * file)<br>read config from file</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-testerread">TesterRead</a></strong>(<a href="Classes/classecl_1_1LogicParser.md">LogicParser</a> * parser)<br>read config from logic_parser for tester</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-write">Write</a></strong>(const char * file) const<br>write config to file</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-mapmemory">MapMemory</a></strong>(volatile uint32_t * map) const<br>write register memory to the shared memory</td>
+</tr>
+<tr>
+<td>const <a href="structecl_1_1MemoryConfig_1_1Memory.html">Memory</a> *</td>
+<td><strong><a href="Classes/classecl_1_1MemoryConfig.md#function-getmemory">GetMemory</a></strong>() const<br>get the const pointer to memroy struct</td>
+</tr>
+<tr>
+<td>uint8_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-convertsource">ConvertSource</a></strong>(size_t source) const<br>convert source index from <a href="Classes/classecl_1_1LogicParser.md">LogicParser</a> to memroy selection</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes"><a name="public-attributes" class="plugin-anchor" href="#public-attributes"><i class="fa fa-link" aria-hidden="true"></i></a>Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kfrontiogroupnum">kFrontIoGroupNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kfrontiogroupsize">kFrontIoGroupSize</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kfrontionum">kFrontIoNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kfrontioselectionbits">kFrontIoSelectionBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kmultinum">kMultiNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kmultithresholdbits">kMultiThresholdBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kmultibits">kMultiBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-korgatenum">kOrGateNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-korgatebits">kOrGateBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kandgatenum">kAndGateNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kandgatebits">kAndGateBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kbackenablebits">kBackEnableBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kbackselectionbits">kBackSelectionBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdividernum">kDividerNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdividerselectionbits">kDividerSelectionBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdivider-divisorbits">kDivider_DivisorBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdividergatenum">kDividerGateNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-koperatortypebits">kOperatorTypeBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdividergate-divdersourceselectionbits">kDividerGate_DivderSourceSelectionBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdividergate-othersourceselectionbits">kDividerGate_OtherSourceSelectionBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kdividergatebits">kDividerGateBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kscalernum">kScalerNum</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kscalersourceselectionbits">kScalerSourceSelectionBits</a></strong></td>
+</tr>
+<tr>
+<td>const size_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#variable-kscalerclockselectionbits">kScalerClockSelectionBits</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="friends"><a name="friends" class="plugin-anchor" href="#friends"><i class="fa fa-link" aria-hidden="true"></i></a>Friends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>std::ostream &amp;</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#friend-operator%3C%3C">operator&lt;&lt;</a></strong>(std::ostream &amp; os, const <a href="Classes/classecl_1_1MemoryConfig.md">MemoryConfig</a> &amp; config) <br>print the memory</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation"><a name="public-functions-documentation" class="plugin-anchor" href="#public-functions-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Public Functions Documentation</h2>
+<h3 id="function-memoryconfig"><a name="function-memoryconfig" class="plugin-anchor" href="#function-memoryconfig"><i class="fa fa-link" aria-hidden="true"></i></a>function MemoryConfig</h3>
+<pre><code class="lang-cpp">MemoryConfig()
+</code></pre>
+<p>Construct a new <a href="">Memory</a> Config object. </p>
+<h3 id="function-memoryconfig"><a name="function-memoryconfig" class="plugin-anchor" href="#function-memoryconfig"><i class="fa fa-link" aria-hidden="true"></i></a>function ~MemoryConfig</h3>
+<pre><code class="lang-cpp">~MemoryConfig() =<span class="hljs-keyword">default</span>
+</code></pre>
+<p>default destructor </p>
+<h3 id="function-clear"><a name="function-clear" class="plugin-anchor" href="#function-clear"><i class="fa fa-link" aria-hidden="true"></i></a>function Clear</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Clear</span><span class="hljs-params">()</span>
+</span></code></pre>
+<p>clear the memory values </p>
+<h3 id="function-read"><a name="function-read" class="plugin-anchor" href="#function-read"><i class="fa fa-link" aria-hidden="true"></i></a>function Read</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Read</span><span class="hljs-params">(
+    LogicParser * parser
+)</span>
+</span></code></pre>
+<p>read config from logic_parser </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>parser</strong> pointer to logic parser </li>
+</ul>
+<p><strong>Return</strong>: 0 on suceess, -1 on failure </p>
+<h3 id="function-read"><a name="function-read" class="plugin-anchor" href="#function-read"><i class="fa fa-link" aria-hidden="true"></i></a>function Read</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Read</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * file
+)</span>
+</span></code></pre>
+<p>read config from file </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>file</strong> name of file to read </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-testerread"><a name="function-testerread" class="plugin-anchor" href="#function-testerread"><i class="fa fa-link" aria-hidden="true"></i></a>function TesterRead</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">TesterRead</span><span class="hljs-params">(
+    LogicParser * parser
+)</span>
+</span></code></pre>
+<p>read config from logic_parser for tester </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>parser</strong> pointer to the logic parser </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-write"><a name="function-write" class="plugin-anchor" href="#function-write"><i class="fa fa-link" aria-hidden="true"></i></a>function Write</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Write</span><span class="hljs-params">(
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * file
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>write config to file </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>file</strong> name of file to write </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-mapmemory"><a name="function-mapmemory" class="plugin-anchor" href="#function-mapmemory"><i class="fa fa-link" aria-hidden="true"></i></a>function MapMemory</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">MapMemory</span><span class="hljs-params">(
+    <span class="hljs-keyword">volatile</span> uint32_t * <span class="hljs-built_in">map</span>
+)</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>write register memory to the shared memory </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>map</strong> address of mapped shared memroy </li>
+</ul>
+<p><strong>Return</strong>: 0 on success, -1 on failure </p>
+<h3 id="function-getmemory"><a name="function-getmemory" class="plugin-anchor" href="#function-getmemory"><i class="fa fa-link" aria-hidden="true"></i></a>function GetMemory</h3>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">const</span> Memory * <span class="hljs-title">GetMemory</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span>
+</span></code></pre>
+<p>get the const pointer to memroy struct </p>
+<p><strong>Return</strong>: const pointer to memory struct </p>
+<h3 id="function-convertsource"><a name="function-convertsource" class="plugin-anchor" href="#function-convertsource"><i class="fa fa-link" aria-hidden="true"></i></a>function ConvertSource</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">uint8_t</span> ConvertSource(
+    <span class="hljs-keyword">size_t</span> source
+) <span class="hljs-keyword">const</span>
+</code></pre>
+<p>convert source index from <a href="classecl_1_1LogicParser.html">LogicParser</a> to memroy selection </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>source</strong> index of source from parser </li>
+</ul>
+<p><strong>Return</strong>: selection index in memroy config </p>
+<h2 id="public-attributes-documentation"><a name="public-attributes-documentation" class="plugin-anchor" href="#public-attributes-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Public Attributes Documentation</h2>
+<h3 id="variable-kfrontiogroupnum"><a name="variable-kfrontiogroupnum" class="plugin-anchor" href="#variable-kfrontiogroupnum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kFrontIoGroupNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kFrontIoGroupNum = <span class="hljs-number">3</span>;
+</code></pre>
+<h3 id="variable-kfrontiogroupsize"><a name="variable-kfrontiogroupsize" class="plugin-anchor" href="#variable-kfrontiogroupsize"><i class="fa fa-link" aria-hidden="true"></i></a>variable kFrontIoGroupSize</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kFrontIoGroupSize = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-kfrontionum"><a name="variable-kfrontionum" class="plugin-anchor" href="#variable-kfrontionum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kFrontIoNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kFrontIoNum = kFrontIoGroupNum * kFrontIoGroupSize;
+</code></pre>
+<h3 id="variable-kfrontioselectionbits"><a name="variable-kfrontioselectionbits" class="plugin-anchor" href="#variable-kfrontioselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kFrontIoSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kFrontIoSelectionBits = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kmultinum"><a name="variable-kmultinum" class="plugin-anchor" href="#variable-kmultinum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMultiNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMultiNum = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-kmultithresholdbits"><a name="variable-kmultithresholdbits" class="plugin-anchor" href="#variable-kmultithresholdbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMultiThresholdBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMultiThresholdBits = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kmultibits"><a name="variable-kmultibits" class="plugin-anchor" href="#variable-kmultibits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kMultiBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kMultiBits = kFrontIoNum + kMultiThresholdBits;
+</code></pre>
+<h3 id="variable-korgatenum"><a name="variable-korgatenum" class="plugin-anchor" href="#variable-korgatenum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOrGateNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kOrGateNum = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-korgatebits"><a name="variable-korgatebits" class="plugin-anchor" href="#variable-korgatebits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOrGateBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kOrGateBits = kFrontIoNum + kMultiNum;
+</code></pre>
+<h3 id="variable-kandgatenum"><a name="variable-kandgatenum" class="plugin-anchor" href="#variable-kandgatenum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kAndGateNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kAndGateNum = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-kandgatebits"><a name="variable-kandgatebits" class="plugin-anchor" href="#variable-kandgatebits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kAndGateBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kAndGateBits = kFrontIoNum + kMultiNum + kOrGateNum;
+</code></pre>
+<h3 id="variable-kbackenablebits"><a name="variable-kbackenablebits" class="plugin-anchor" href="#variable-kbackenablebits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kBackEnableBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kBackEnableBits = <span class="hljs-number">1</span>;
+</code></pre>
+<h3 id="variable-kbackselectionbits"><a name="variable-kbackselectionbits" class="plugin-anchor" href="#variable-kbackselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kBackSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kBackSelectionBits = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kdividernum"><a name="variable-kdividernum" class="plugin-anchor" href="#variable-kdividernum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerNum = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kdividerselectionbits"><a name="variable-kdividerselectionbits" class="plugin-anchor" href="#variable-kdividerselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerSelectionBits = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kdividerdivisorbits"><a name="variable-kdividerdivisorbits" class="plugin-anchor" href="#variable-kdividerdivisorbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDivider_DivisorBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDivider_DivisorBits = <span class="hljs-number">32</span>;
+</code></pre>
+<h3 id="variable-kdividergatenum"><a name="variable-kdividergatenum" class="plugin-anchor" href="#variable-kdividergatenum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerGateNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerGateNum = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-koperatortypebits"><a name="variable-koperatortypebits" class="plugin-anchor" href="#variable-koperatortypebits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kOperatorTypeBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kOperatorTypeBits = <span class="hljs-number">1</span>;
+</code></pre>
+<h3 id="variable-kdividergatedivdersourceselectionbits"><a name="variable-kdividergatedivdersourceselectionbits" class="plugin-anchor" href="#variable-kdividergatedivdersourceselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerGate_DivderSourceSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerGate_DivderSourceSelectionBits = <span class="hljs-number">4</span>;
+</code></pre>
+<h3 id="variable-kdividergateothersourceselectionbits"><a name="variable-kdividergateothersourceselectionbits" class="plugin-anchor" href="#variable-kdividergateothersourceselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerGate_OtherSourceSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerGate_OtherSourceSelectionBits = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kdividergatebits"><a name="variable-kdividergatebits" class="plugin-anchor" href="#variable-kdividergatebits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kDividerGateBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kDividerGateBits = <span class="hljs-number">16</span>;
+</code></pre>
+<h3 id="variable-kscalernum"><a name="variable-kscalernum" class="plugin-anchor" href="#variable-kscalernum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kScalerNum</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kScalerNum = <span class="hljs-number">32</span>;
+</code></pre>
+<h3 id="variable-kscalersourceselectionbits"><a name="variable-kscalersourceselectionbits" class="plugin-anchor" href="#variable-kscalersourceselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kScalerSourceSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kScalerSourceSelectionBits = <span class="hljs-number">8</span>;
+</code></pre>
+<h3 id="variable-kscalerclockselectionbits"><a name="variable-kscalerclockselectionbits" class="plugin-anchor" href="#variable-kscalerclockselectionbits"><i class="fa fa-link" aria-hidden="true"></i></a>variable kScalerClockSelectionBits</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kScalerClockSelectionBits = <span class="hljs-number">4</span>;
+</code></pre>
+<h2 id="friends"><a name="friends" class="plugin-anchor" href="#friends"><i class="fa fa-link" aria-hidden="true"></i></a>Friends</h2>
+<h3 id="friend-operator"><a name="friend-operator" class="plugin-anchor" href="#friend-operator"><i class="fa fa-link" aria-hidden="true"></i></a>friend operator&lt;&lt;</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">friend</span> <span class="hljs-built_in">std</span>::ostream &amp; <span class="hljs-keyword">operator</span>&lt;&lt;(
+    <span class="hljs-built_in">std</span>::ostream &amp; os,
+
+    <span class="hljs-keyword">const</span> MemoryConfig &amp; config
+);
+</code></pre>
+<p>print the memory </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>os</strong> ostream </li>
+<li><strong>config</strong> the <a href="classecl_1_1MemoryConfig.html">MemoryConfig</a> object to print </li>
+</ul>
+<p><strong>Return</strong>: input ostream after print <a href="classecl_1_1MemoryConfig.html">MemoryConfig</a></p>
+<hr>
+<p>Updated on 2022-08-18 at 21:47:38 +0800</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="classecl_1_1LogicParser.html" class="navigation navigation-prev " aria-label="Previous page: ecl::LogicParser">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="structecl_1_1MemoryConfig_1_1Memory.html" class="navigation navigation-next " aria-label="Next page: ecl::MemoryConfig::Memory">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ecl::MemoryConfig","level":"1.5.1.13","depth":3,"next":{"title":"ecl::MemoryConfig::Memory","level":"1.5.1.14","depth":3,"path":"reference/Classes/structecl_1_1MemoryConfig_1_1Memory.md","ref":"reference/Classes/structecl_1_1MemoryConfig_1_1Memory.md","articles":[]},"previous":{"title":"ecl::LogicParser","level":"1.5.1.12","depth":3,"path":"reference/Classes/classecl_1_1LogicParser.md","ref":"reference/Classes/classecl_1_1LogicParser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Classes/classecl_1_1MemoryConfig.md","mtime":"2022-08-18T13:47:38.192Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-18T13:47:43.947Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -3,7 +3,7 @@
 ## 下载
 
 ```bash
-git clone https://github.com/kinstaky/eash-config-logic.git
+$ git clone https://github.com/kinstaky/eash-config-logic.git
 ```
 
 
@@ -17,8 +17,8 @@ git clone https://github.com/kinstaky/eash-config-logic.git
 在 `easy-config-logic` 项目根目录下
 
 ```bash
-cmake -S . -B build
-cmake --build build
+$ cmake -S . -B build
+$ cmake --build build
 ```
 
 编译后的可执行文件在 `build/standalone` 目录下，主要的可执行文件为 `config`
@@ -26,7 +26,7 @@ cmake --build build
 输入安装命令会将可执行文件复制到 `build/bin` 目录下
 
 ```bash
-cmake --build build --target install
+$ cmake --build build --target install
 ```
 
 
@@ -36,7 +36,7 @@ cmake --build build --target install
 在 `easy-config-logic` 项目根目录下
 
 ```bash
-make all
+$ make all
 ```
 
 编译后的可执行文件在根目录 `standalone`目录下，并且会复制到 `bin` 目录下。使用 `make` 编译，源码和 `.o` 中间文件会混合在一起，并且不会编译 `test` 目录下的测试样例
@@ -48,7 +48,7 @@ make all
 仅支持使用 `cmake` 测试
 
 ```bash
-cmake --build build --target test
+$ cmake --build build --target test
 ```
 
 
@@ -58,7 +58,7 @@ cmake --build build --target test
 参考[配置语法](config_syntax.md)，编写自己的配置文件，或者使用 `example` 目录下的样例 `example_logic_0.txt`，输入如下命令进行配置
 
 ```bash
-./config -l example_logic_0.txt
+$ ./config -l example_logic_0.txt
 ```
 
 现在，FPGA 已经被设置好了， 可以使用示波器、信号发生器或者配合 pixie16 插件来进行测试。可以查看[配置示例](config_examples.md)参考该示例的作用和测试方法。更多的功能参考[进阶使用](advanced.md)。

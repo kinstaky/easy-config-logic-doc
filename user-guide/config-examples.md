@@ -39,7 +39,7 @@ S4 = D0
 在 MZTIO 系统中运行
 
 ```bash
-./config -l example_logic_0.txt
+$ ./config -l example_logic_0.txt
 ```
 
 
@@ -57,7 +57,7 @@ S4 = D0
 
 ### 示波器结果
 
-![DPO-display](../images/2022-08-14-easy-config-logic-example-0-DPO-result.png)
+![DPO-display](../resource/images/2022-08-14-easy-config-logic-example-0-DPO-result.png)
 
 
 
@@ -73,7 +73,7 @@ S4 = D0
 输入命令查看内置定标器计数
 
 ```bash
-./scaler
+$ ./scaler
 scalar      counts
  0           4000
  1           1000
@@ -111,7 +111,7 @@ scalar      counts
 
 从定标器结果来看，除了第4个定标器以外都是意料之中的结果，而第4个定标器监视的信号 C30，即示波器中看到的通道4信号，理论上应该是400Hz。实际上细看上图，可以发现示波器的触发时通道4，且触发的信号在屏幕中间部分。这意味着在屏幕中间部分有一个因为宽度过窄而看不见的信号，前面提到通道4的信号时通道2和通道3的信号的与结果，那么如果在屏幕中间部分，通道2的信号变为1的瞬间通道3的信号还没有变为0，那么即有可能产生一个宽度极窄的通道4信号。下图展示了这个窄信号在被看见的情形
 
-![DPO-display-race](../images/2022-08-16-easy-config-logic-example-0-DPO-result-rece.png)
+![DPO-display-race](../resource/images/2022-08-16-easy-config-logic-example-0-DPO-result-rece.png)
 
 因此内置定标器显示的通道4有600Hz 是可以接受的。实际测量情况中一般不会出现如此有规律的波形，并且符合的信号也不会像通道2和通道3的信号一样周期性地产生窄信号，所以在实际情况中应该不会出现这样与直观不符的情形。
 

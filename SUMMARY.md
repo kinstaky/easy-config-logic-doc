@@ -11,4 +11,9 @@
     * [配置示例](user-guide/config-examples.md)
     * [进阶使用](user-guide/advanced.md)
 * [开发者文档](developer/developer.md)
+    * [syntax 库](developer/syntax.md)
+    * [standardize 库](developer/stadnardize.md)
+    * [config 库](developer/config.md)
+    * [standalone](developer/standalone.md)
+
 

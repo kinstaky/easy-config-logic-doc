@@ -6,9 +6,9 @@
 
 ```bash
 # 从高级配置文件产生低级配置文件
-./convert example_logic_0.txt example_memory_0.txt
+$ ./convert example_logic_0.txt example_memory_0.txt
 # 读取配置文件配置 FPGA
-./config example_memory_0.txt
+$ ./config example_memory_0.txt
 ```
 
 即先根据包含逻辑表达式的高级配置文件产生中间的低级配置文件，随后依然运行 `config` 程序配置 FPGA 芯片，此时省略 `-l` 参数。
@@ -22,7 +22,7 @@
 所谓定标器（scaler），即统计信号频率的模块。在配置文件中写好定标器定义后，FPGA 配置好后会将被检测信号的频率记录在内存中，运行程序即可读取
 
 ```bash
-./scaler
+$ ./scaler
 ```
 
 如此，程序将在屏幕中打印所有定标器记录的信号频率，单位 Hz，该值每秒刷新一次。如果定标器未定义，则会显示频率为1Hz。按Ctrl+C退出程序。
@@ -30,7 +30,7 @@
 考虑到可能需要对定标器的值进行记录，本项目另外提供了两个程序以记录定标器内容。第一个程序是 `scaler_server`，它运行在 zynq7020 的系统中
 
 ```bash
-./scaler_server -h
+$ ./scaler_server -h
 Usage: ./scaler_server  port [log file] [log level]
   port         Set the listening port.
   log file     Set the log file path, do not log if not set.
@@ -46,7 +46,7 @@ Usage: ./scaler_server  port [log file] [log level]
 第二个程序是客户端程序，可以在 zynq7020 的系统中运行，但更推荐在正经的 pc 中运行，运行方法
 
 ```bash
- ./scaler_client -h                                                                                                                     
+$ ./scaler_client -h                                                                                                                     
 Usage: ./scaler_client [options] host port [data path] [log file] [log level]
 Options:
   -t           Record scaler values in text(in binary default).

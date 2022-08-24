@@ -27,17 +27,29 @@ $ ./scaler
 
 如此，程序将在屏幕中打印所有定标器记录的信号频率，单位 Hz，该值每秒刷新一次。如果定标器未定义，则会显示频率为1Hz。按Ctrl+C退出程序。
 
+
+
+### 记录数据
+
 考虑到可能需要对定标器的值进行记录，本项目另外提供了两个程序以记录定标器内容。第一个程序是 `scaler_server`，它运行在 zynq7020 的系统中
 
 ```bash
 $ ./scaler_server -h
-Usage: ./scaler_server  port [log file] [log level]
+Usage: ./scaler_server [options] port [log file] [log level]
+Options:
+  -h           Print help and exit.
+  -v           Print version and exit.
+  -p           Print on screen.
   port         Set the listening port.
   log file     Set the log file path, do not log if not set.
   log level    Set the log level: error, warning, info, debug, default is warning.
 ```
 
 该程序将在读取定标器值同时作为服务端，等待客户端程序请求数据，输入入Ctrl+C 退出程序。
+
++ `-h` 打印帮助信息
++ `-v` 打印版本信息
++ `-p` 在屏幕上实时显示定标器的值
 
 + `port` 服务端的监听端口，必须设置
 + `log file` 日志文件的路径，不设置时不记录日志
@@ -50,7 +62,8 @@ $ ./scaler_client -h
 Usage: ./scaler_client [options] host port [data path] [log file] [log level]
 Options:
   -t           Record scaler values in text(in binary default).
-  -h           Print this help information.
+  -h           Print this help and exit.
+  -v           Print version and exit.
   host         Set the host to connect to, necessary.
   port         Set the port to connect to, necessary.
   data path    Set the path to record data and time, default is this directory(.).
@@ -62,6 +75,7 @@ Options:
 
 + `-t` 将数据保存为可阅读的文本格式，默认为二进制格式
 + `-h` 打印帮助信息
++ `-v`打印版本信息
 + `host` 服务端的地址，必须设置
 + `port` 服务端监听端口，必须设置，与服务端设置的保持一致
 + `data path` 数据文件路径，默认为程序运行目录，记录的数据将以天为单位划分，即一天一个文件，比如2022年6月1日记录的数据将保存在 20220601.txt 或 20220601.bin 中
@@ -70,4 +84,41 @@ Options:
 
 
 
-注意：运行上述两个程序的系统时间必须晚于2022年6月1日 00:00，否则可能会发生未知错误。
+### 查看数据
+
+一般来说，我喜欢把数据存成二进制的，占用空间小，读写速度快，非顺序读写，缺点是人看不懂。所以我又写了两个花里胡哨的程序来查看数据。
+
+第一个是用`html` 和  `javascript` 写的，用浏览器打开 `visual-scaler.html` 即可，比如说
+
+```bash
+$ firefox standalone/scaler/scaler-visual.html
+```
+
+当然，这个程序相当于客户端，光靠它什么都看不了，还需要运行第二个服务端程序 `scaler_http_server`
+
+```bash
+$ ./scaler_http_server -h
+Usage: ./scaler_http_server path
+  path       Set the data path
+```
+
+该程序需要一个参数，即使前面 `scaler_client` 的 `data path` 参数，即数据文件保存的目录。
+
+运行服务端程序后，打开浏览器即可看到如下界面。
+
+![visual_scaler_history](../resource/images/visual_scaler_history.png)
+
+界面最上方是选择查看的方式，历史模式 **history** 或者实时模式 **realtime**。按钮变成蓝色表示被选中，如上图就是历史模式。
+
+#### 历史模式
+
+历史模式用于查看过去几天的数据，可以看到模式选择下方是日期选择，有两个日期需要设置，开始日期和结束日期，查看的是从（含）开始日期到（含）结束日期之间的定标器数据，选择日期后点击按钮 **request**，请求数据，稍等片刻就会加载完成。加载完成后点击图右边栏的图例，即可查看指定定标器的数据。简单来说，这里粗略地模仿了订酒店 app 的交互方式，选日期，看数据。
+
+#### 实时模式
+
+实时模式用于实时监控定标器的数据，点击 **realtime** 按钮后，会变成如下界面。
+
+![visual_scaler_realtime](../resource/images/visual_scaler_realtime.png)
+
+模式选择下方是观察时间范围选择，可以选择图里显示的时间范围，包括1分钟、20分钟、1小时、10小时和1天。选择后图显示的范围也会相应变化。同样的，载入数据后需要点击图右边的图例来显示特定定标器的数据。简单来说，这里粗略地模仿了下载或上传文件的实时下载、上传网速显示。
+

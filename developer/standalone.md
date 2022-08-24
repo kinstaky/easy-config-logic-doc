@@ -122,7 +122,7 @@ $ ./bin/scaler
 
 定义和实现在`standalone/scaler/scaler_defs.h` 和  `standalone/scaler/scaler_server.cpp` 中。
 
-这个在[进阶使用](../user-guide/advanced.md#定标器)中提到过，这里就不重复介绍了，记得它是在 zynq 的系统里跑的并设置端口号就行。默认是每4秒记录一次定标器数值，可以自己在头文件里面更改 `kRecordPeriod`来改变记录时间间隔，单位是秒。
+这个在[进阶使用](../user-guide/advanced.md#定标器)中提到过，这里就不重复介绍了，记得它是在 zynq 的系统里跑的并设置端口号就行。默认是每1秒记录一次定标器数值，可以自己在头文件里面更改 `kRecordPeriod`来改变记录时间间隔，单位是秒。
 
 ```bash
 $ ./bin/scaler_server 12306
@@ -136,7 +136,7 @@ $ ./bin/scaler_server 12306
 
 定义和实现在`standalone/scaler/scaler_defs.h` 和  `standalone/scaler/scaler_client.cpp` 中。
 
-这个在[进阶使用](../user-guide/advanced.md#定标器)中提到过，这里就不重复介绍了。它可以在 zynq 的系统里跑，但我觉得正确的用法是在另一台更好的机器里跑。需要输入 zynq 的 ip 地址和服务端设置的端口。默认是服务端每4秒记录一次定标器数值，客户端积累8次的记录（即32秒）再向客户端请求这堆数据。可以修改头文件中的 `kRecordPeriod` 来更改记录时间间隔，单位为秒。修改头文件中的 `kScalerStackSize` 来修改记录的积累数量，单位是个。
+这个在[进阶使用](../user-guide/advanced.md#定标器)中提到过，这里就不重复介绍了。它可以在 zynq 的系统里跑，但我觉得正确的用法是在另一台更好的机器里跑。需要输入 zynq 的 ip 地址和服务端设置的端口。默认是服务端每1秒记录一次定标器数值，客户端积累1次的记录（即1秒）再向客户端请求这堆数据。可以修改头文件中的 `kRecordPeriod` 来更改记录时间间隔，单位为秒。修改头文件中的 `kScalerStackSize` 来修改记录的积累数量，单位是个。
 
 ```bash
 $ ./bin/scaler_client 192.168.1.108 12306
@@ -145,6 +145,20 @@ $ ./bin/scaler_client 192.168.1.108 12306
 程序运行后默认将数据输出到运行目录，可以通过输入参数来改变，详见[进阶使用](../user-guide/advanced.md#定标器)。
 
 
+
+## scaler_http_server
+
+定义和实现在 `standalone/scaler/scaler_http_server.cpp` 中，并使用了 `include/external/json.hpp` 的 json 库和 `include/external/httplib.h` 的 http 库。
+
+这个同样在[进阶使用](../user-guide/advanced.md#定标器)中提到过，主要用来给可视化的客户端提供数据。里面实际上是分别在 `/history` 和 `/realtime` 地址下部署了两个 http 服务器，用来监听客户端的数据请求并回应数据。这两个服务器都需要读取由 `scaler_client` 保存地二进制数据，并转化成 json 格式发送给客户端。
+
+
+
+## scaler_visual
+
+实现在 `standalone/scaler/scaler_visual.html` 和 `main.js`。
+
+这个是用 html 和 javascript 写的脚本，用于在浏览器中查看历史的或实时的定标器数据，同样在[进阶使用](../user-guide/advanced.md#定标器)中提到过。画图主要调用了 [echarts](https://echarts.apache.org/en/index.html)，因为我是 html 和 JavaScript 的新手，里面都是乱写的，反正最后能跑我就满足了。感觉写的都是无聊的东西，“设计”一下界面，给按钮加上响应，向服务器请求数据，将数据导入到图里，没了。
 
 ## 附录
 

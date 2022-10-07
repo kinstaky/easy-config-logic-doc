@@ -190,7 +190,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/quick-start.html">
+        <li class="chapter " data-level="1.3.1" data-path="../../user-guide/pre-install.html">
+            
+                <a href="../../user-guide/pre-install.html">
+            
+                    
+                    开始之前
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/quick-start.html">
             
                 <a href="../../user-guide/quick-start.html">
             
@@ -203,7 +216,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../../user-guide/config-syntax.html">
+        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-syntax.html">
             
                 <a href="../../user-guide/config-syntax.html">
             
@@ -216,7 +229,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../../user-guide/config-examples.html">
+        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/config-examples.html">
             
                 <a href="../../user-guide/config-examples.html">
             
@@ -229,7 +242,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../../user-guide/advanced.html">
+        <li class="chapter " data-level="1.3.5" data-path="../../user-guide/advanced.html">
             
                 <a href="../../user-guide/advanced.html">
             
@@ -1051,6 +1064,10 @@
 <td>uint8_t</td>
 <td><strong><a href="classecl_1_1MemoryConfig.html#function-convertsource">ConvertSource</a></strong>(size_t source) const<br>convert source index from <a href="Classes/classecl_1_1LogicParser.md">LogicParser</a> to memroy selection</td>
 </tr>
+<tr>
+<td>uint8_t</td>
+<td><strong><a href="classecl_1_1MemoryConfig.html#function-rj45enable">Rj45Enable</a></strong>(size_t index) const<br>get the rj45 enable flag</td>
+</tr>
 </tbody>
 </table>
 <h2 id="public-attributes"><a name="public-attributes" class="plugin-anchor" href="#public-attributes"><i class="fa fa-link" aria-hidden="true"></i></a>Public Attributes</h2>
@@ -1259,6 +1276,17 @@
 <li><strong>source</strong> index of source from parser </li>
 </ul>
 <p><strong>Return</strong>: selection index in memroy config </p>
+<h3 id="function-rj45enable"><a name="function-rj45enable" class="plugin-anchor" href="#function-rj45enable"><i class="fa fa-link" aria-hidden="true"></i></a>function Rj45Enable</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">uint8_t</span> Rj45Enable(
+    <span class="hljs-keyword">size_t</span> index
+) <span class="hljs-keyword">const</span>
+</code></pre>
+<p>get the rj45 enable flag </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>index</strong> index of the rj45 port group, 0 for A0-A7, 1 for A8-A15, 2 for B0-B7, 3 for B8-B15, 4 for C0-C7, 5 for C8-C15 </li>
+</ul>
+<p><strong>Return</strong>: enable flag if index is valid, 0 otherwise </p>
 <h2 id="public-attributes-documentation"><a name="public-attributes-documentation" class="plugin-anchor" href="#public-attributes-documentation"><i class="fa fa-link" aria-hidden="true"></i></a>Public Attributes Documentation</h2>
 <h3 id="variable-kfrontiogroupnum"><a name="variable-kfrontiogroupnum" class="plugin-anchor" href="#variable-kfrontiogroupnum"><i class="fa fa-link" aria-hidden="true"></i></a>variable kFrontIoGroupNum</h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> kFrontIoGroupNum = <span class="hljs-number">3</span>;
@@ -1348,7 +1376,7 @@
 </ul>
 <p><strong>Return</strong>: input ostream after print <a href="classecl_1_1MemoryConfig.html">MemoryConfig</a></p>
 <hr>
-<p>Updated on 2022-08-18 at 21:53:47 +0800</p>
+<p>Updated on 2022-10-07 at 21:04:20 +0800</p>
 
                                 
                                 </section>
@@ -1392,7 +1420,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ecl::MemoryConfig","level":"1.5.1.13","depth":3,"next":{"title":"ecl::MemoryConfig::Memory","level":"1.5.1.14","depth":3,"path":"reference/Classes/structecl_1_1MemoryConfig_1_1Memory.md","ref":"reference/Classes/structecl_1_1MemoryConfig_1_1Memory.md","articles":[]},"previous":{"title":"ecl::LogicParser","level":"1.5.1.12","depth":3,"path":"reference/Classes/classecl_1_1LogicParser.md","ref":"reference/Classes/classecl_1_1LogicParser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Classes/classecl_1_1MemoryConfig.md","mtime":"2022-08-18T13:53:47.393Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-24T02:41:12.791Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ecl::MemoryConfig","level":"1.5.1.13","depth":3,"next":{"title":"ecl::MemoryConfig::Memory","level":"1.5.1.14","depth":3,"path":"reference/Classes/structecl_1_1MemoryConfig_1_1Memory.md","ref":"reference/Classes/structecl_1_1MemoryConfig_1_1Memory.md","articles":[]},"previous":{"title":"ecl::LogicParser","level":"1.5.1.12","depth":3,"path":"reference/Classes/classecl_1_1LogicParser.md","ref":"reference/Classes/classecl_1_1LogicParser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","code","splitter","mathjax-commonhtml"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"mathjax-commonhtml":{"defaultScaling":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"easy-config-logic 说明文档","gitbook":"*","description":"easy-config-logic 项目的使用和开发说明"},"file":{"path":"reference/Classes/classecl_1_1MemoryConfig.md","mtime":"2022-10-07T13:04:20.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-07T13:08:08.107Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

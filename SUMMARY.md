@@ -6,10 +6,12 @@
     * [获取插件 pixie16](hardware/pixie16.md)
     * [结合使用](hardware/combine.md)
 * [使用说明](user-guide/user-guide.md)
+    * [开始之前](user-guide/pre-install.md)
     * [快速开始](user-guide/quick-start.md)
     * [配置语法](user-guide/config-syntax.md)
     * [配置示例](user-guide/config-examples.md)
     * [进阶使用](user-guide/advanced.md)
+    
 * [开发者文档](developer/developer.md)
     * [syntax 库](developer/syntax.md)
     * [standardize 库](developer/standardize.md)
@@ -61,5 +63,4 @@
       * [config](reference/Files/dir_9f351d46ce3cc29445a41dc3a31e6919.md)
       * [logic_parser.h](reference/Files/logic__parser_8h.md)
       * [memory_config.h](reference/Files/memory__config_8h.md)
-
 

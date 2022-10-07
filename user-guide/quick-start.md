@@ -61,4 +61,6 @@ $ cmake --build build --target test
 $ ./config -l example_logic_0.txt
 ```
 
+注意，如果直接在目录下运行会找不到文件，使用 cmake 构建的可执行文件在 `build/standalone/` 目录下，或者使用 cmake 安装后会在 `build/bin/` 目录下，或者使用 make 构建的在 `/bin` 目录下，需要根据实际情况在相应目录下执行。
+
 现在，FPGA 已经被设置好了， 可以使用示波器、信号发生器或者配合 pixie16 插件来进行测试。可以查看[配置示例](config_examples.md)参考该示例的作用和测试方法。更多的功能参考[进阶使用](advanced.md)。
